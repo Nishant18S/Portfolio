@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title style="color:gold">Nishant Sankar Swain</title>
+    <link rel="icon" type="image/x-icon" href="https://media.licdn.com/dms/image/D5603AQGpuekTidj9Zw/profile-displayphoto-shrink_200_200/0/1711170813171?e=2147483647&v=beta&t=RGay5g_T8aBXkU69kKtg1sAyjfERbmyv1L4VXcd2PPI">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0; /* Background color for the body */
+        }
+        #video-background {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1000;
+            background-size: cover;
+        }
+        img {
+            height: 600px;
+            width: 900px;
+        }
+        .form-container {
+            background-color:yellow; /* Form background color */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 400px; /* Adjust max-width as needed */
+            width: 100%;
+        }
+        .form-container h2 {
+            margin-top: 0;
+            color: #333; /* Header text color */
+        }
+        .form-container form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .form-container form input[type="text"],
+        .form-container form input[type="password"],
+        .form-container form input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            /* Input field styles */
+        }
+        .form-container form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50; /* Button background color */
+            color: #fff; /* Button text color */
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            /* Button styles */
+        }
+        .form-container form button:hover {
+            background-color: #45a049; /* Button hover background color */
+        }
+        /* Additional styles */
+        .form-container p {
+            margin-top: 10px;
+            color: #666; /* Text color for paragraphs */
+        }
+        .form-container button[id^="show"] {
+            background-color: #007bff; /* Login/Register switch button background color */
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            padding: 5px 10px;
+        }
+        .form-container button[id^="show"]:hover {
+            background-color: #0056b3; /* Login/Register switch button hover background color */
+        }
+        .form-container button#otpButton {
+            background-color: #ffc107; /* OTP button background color */
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .form-container button#otpButton:hover {
+            background-color: #e0a800; /* OTP button hover background color */
+        }
+        .form-container #welcome {
+            background-color: #28a745; /* Welcome message background color */
+            color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .form-container #welcome p {
+            color: #dc3545; /* Error message text color */
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <video id="video-background" autoplay muted loop>
+            <source src="https://videos.pexels.com/video-files/1943483/1943483-uhd_2560_1440_25fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="form-container" id="registration">
+            <h2>Registration</h2>
+            <form id="registrationForm">
+                <input type="text" id="username" name="username" placeholder="Username" required>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <button type="submit">Register</button>
+                
+            </form>
+            <p>Already have an account? <button id="showLoginForm">Login</button></p>
+        </div>
+
+        <div class="form-container" id="login" style="display: none;">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="text" id="loginUsername" name="loginUsername" placeholder="Username" required>
+                <input type="password" id="loginPassword" name="loginPassword" placeholder="Password" required>
+                <button type="submit">Login</button>
+                <p><button id="forgetPassword">Forget Password</button></p>
+                <div id="resetPasswordForm" style="display: none;">
+                    <input type="password" id="newPassword" placeholder="Enter New Password" required>
+                    <input type="password" id="confirmPassword" placeholder="Confirm New Password" required>
+                    <button id="resetPasswordBtn">Reset Password</button>
+                </div>
+            </form>
+            
+            <p>Don't have an account yet? <button id="showRegistrationForm">Register</button></p>
+            <p>Or</p>
+            <button id="otpButton">Login with OTP</button>
+        </div>
+
+        <div class="form-container" id="otpLogin" style="display: none;">
+            <h2>Login with OTP</h2>
+            <form id="loginForm">
+                <input type="text" id="loginUsername" name="loginUsername" placeholder="Username" required>
+                <input type="password" id="loginPassword" name="loginPassword" placeholder="Password" required>
+                <button type="submit">Login</button>
+                
+            </form>
+            
+        </div>
+
+        <div class="form-container" id="welcome" style="display: none;">
+            <h2>Hello, <span id="loggedInUsername"></span>!</h2>
+            <p>Login successful!</p>
+            <p style="color:red">Redirecting you to the Nishant Portfolio....in 2 Seconds</p>
+        </div>
+
+        <!-- Audio elements for success sounds -->
+        <audio id="registrationAudio">
+            <source src="C:\Users\nisha\Downloads\HOMES\welcome-64347.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+        </audio>
+        <audio id="loginAudio">
+            <source src="C:\Users\nisha\Downloads\HOMES\welcome-to-esn-erasmus-party-71928.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+        </audio>
+
+        <script>
+            // Show registration form initially
+            document.getElementById("showRegistrationForm").addEventListener("click", function() {
+                document.getElementById("login").style.display = "none";
+                document.getElementById("registration").style.display = "flex";
+            });
+
+            // Show login form
+            document.getElementById("showLoginForm").addEventListener("click", function() {
+                document.getElementById("registration").style.display = "none";
+                document.getElementById("login").style.display = "flex";
+            });
+
+            // Add event listener for Forget Password button
+  document.getElementById("forgetPassword").addEventListener("click", function(event) {
+    event.preventDefault();
+    let username = document.getElementById("loginUsername").value;
+    if (localStorage.getItem(username) !== null) {
+        // Simulate reset process (you can customize this part)
+        alert(`Password reset instructions sent to ${username}`);
+    } else {
+        alert("Username not found. Please enter a valid username.");
+    }
+});
+// Function to show reset password form
+function showResetPasswordForm() {
+    document.getElementById("resetPasswordForm").style.display = "block";
+}
+
+// Function to reset password
+function resetPassword(username, newPassword) {
+    localStorage.setItem(username, newPassword); // Update password in localStorage
+    alert("Password reset successful!");
+    document.getElementById("resetPasswordForm").style.display = "none"; // Hide reset form
+    document.getElementById("login").style.display = "flex"; // Show login form
+}
+
+// Event listener for Forget Password button
+document.getElementById("forgetPassword").addEventListener("click", function(event) {
+    event.preventDefault();
+    let username = document.getElementById("loginUsername").value;
+    if (localStorage.getItem(username) !== null) {
+        // Show reset password form
+        showResetPasswordForm();
+    } else {
+        alert("Username not found. Please enter a valid username.");
+    }
+});
+
+// Event listener for Reset Password button
+document.getElementById("resetPasswordBtn").addEventListener("click", function(event) {
+    event.preventDefault();
+    let newPassword = document.getElementById("newPassword").value;
+    let confirmPassword = document.getElementById("confirmPassword").value;
+    let username = document.getElementById("loginUsername").value;
+
+    if (newPassword !== confirmPassword) {
+        alert("Passwords do not match. Please try again.");
+        return;
+    }
+
+    // Call resetPassword function to update password
+    resetPassword(username, newPassword);
+});
+
+
+            // Function to store and count unique users
+            function trackAndCountUser(username) {
+                // Retrieve the stored users array from localStorage or initialize it if it doesn't exist
+                let storedUsers = localStorage.getItem('loggedUsers');
+                storedUsers = storedUsers ? JSON.parse(storedUsers) : [];
+
+                // Check if the user is already stored to prevent duplicates
+                if (!storedUsers.includes(username)) {
+                    storedUsers.push(username); // Add the username to the array
+                    localStorage.setItem('loggedUsers', JSON.stringify(storedUsers)); // Store updated array back to localStorage
+                }
+
+                // Count unique users
+                let uniqueUsersCount = new Set(storedUsers).size;
+                
+                // Display or use the uniqueUsersCount as needed
+                console.log(`Total unique users: ${uniqueUsersCount}`);
+            }
+
+            // Registration form submission
+            document.getElementById("registrationForm").addEventListener("submit", function(event) {
+                event.preventDefault();
+                let username = document.getElementById("username").value;
+                let password = document.getElementById("password").value;
+                if (localStorage.getItem(username) === null) {
+                    localStorage.setItem(username, password);
+                    alert("Registration successful!");
+                    document.getElementById("registrationForm").reset();
+                    document.getElementById("registration").style.display = "none";
+                    document.getElementById("login").style.display = "flex";
+                    document.getElementById("registrationAudio").play(); // Play registration success sound
+                } else {
+                    alert("Username already exists!");
+                }
+            });
+
+            // Username and password login
+            document.getElementById("loginForm").addEventListener("submit", function(event) {
+                event.preventDefault();
+                let loginUsername = document.getElementById("loginUsername").value;
+                let loginPassword = document.getElementById("loginPassword").value;
+                if (localStorage.getItem(loginUsername) === loginPassword) {
+                    alert("Login successful!");
+                    // Track and count unique users
+                    trackAndCountUser(loginUsername);
+                    document.getElementById("login").style.display = "none";
+                    document.getElementById("loggedInUsername").textContent = loginUsername;
+                    document.getElementById("welcome").style.display = "flex";
+                    document.getElementById("loginAudio").play(); // Play login success sound
+                    setTimeout(function() {
+                        window.location.href = "https://nishantsankarswain-portfolio-2024-ali.netlify.app/Portfolio.html";
+                    }, 2000); // Redirect after 2 seconds
+                } else {
+                    alert("Invalid username or password!");
+                }
+            });
+
+            // Toggle between username/password and OTP login
+            document.getElementById("otpButton").addEventListener("click", function() {
+                document.getElementById("login").style.display = "none";
+                document.getElementById("otpLogin").style.display = "flex";
+                generateOTP(); // Generate OTP when switching to OTP login
+            });
+
+            // OTP login form submission
+            document.getElementById("otpLoginForm").addEventListener("submit", function(event) {
+                event.preventDefault();
+                let otpUsername = document.getElementById("otpUsername").value;
+                let otpCode = document.getElementById("otpCode").value;
+                let storedOTP = localStorage.getItem(`${otpUsername}_otp`);
+                if (otpCode === storedOTP) {
+                    alert("Login successful!");
+                    // Track and count unique users
+                    trackAndCountUser(otpUsername);
+                    document.getElementById("otpLogin").style.display = "none";
+                    document.getElementById("loggedInUsername").textContent = otpUsername;
+                    document.getElementById("welcome").style.display = "flex";
+                    document.getElementById("loginAudio").play(); // Play login success sound
+                    setTimeout(function() {
+                        window.location.href = "https://nishantsankarswain-portfolio-2024-ali.netlify.app/Portfolio.html";
+                    }, 2000); // Redirect after 2 seconds
+                } else {
+                    alert("Invalid OTP!");
+                }
+            });
+
+            // Function to generate OTP
+            function generateOTP() {
+                let digits = '0123456789';
+                let OTP = '';
+                for (let i = 0; i < 6; i++) {
+                    OTP += digits[Math.floor(Math.random() * 10)];
+                }
+                let otpUsername = document.getElementById("otpUsername").value;
+                localStorage.setItem(`${otpUsername}_otp`, OTP);
+                alert(`OTP sent to ${otpUsername}: ${OTP}`);
+            }
+        </script>
+        <script>
+        // Function to store and count unique users
+        function trackAndCountUser(username) {
+            // Retrieve the stored users array from localStorage or initialize it if it doesn't exist
+            let storedUsers = localStorage.getItem('loggedUsers');
+            storedUsers = storedUsers ? JSON.parse(storedUsers) : [];
+    
+            // Check if the user is already stored to prevent duplicates
+            if (!storedUsers.includes(username)) {
+                storedUsers.push(username); // Add the username to the array
+                localStorage.setItem('loggedUsers', JSON.stringify(storedUsers)); // Store updated array back to localStorage
+            }
+    
+            // Count unique users
+            let uniqueUsersCount = new Set(storedUsers).size;
+            
+            // Display or use the uniqueUsersCount as needed
+            console.log(`Total unique users: ${uniqueUsersCount}`);
+        }
+    
+        // ... (rest of the JavaScript code remains the same) ...
+    
+        // Create a new function to store user details
+        function storeUserDetails(username, password) {
+        let userDetails = {
+            username: username,
+            password: password
+        };
+        localStorage.setItem(`user_${username}`, JSON.stringify(userDetails));
+    }
+
+    // Update the login and registration form submissions to store user details
+    document.getElementById("registrationForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        let username = document.getElementById("username").value;
+        let password = document.getElementById("password").value;
+        if (localStorage.getItem(username) === null) {
+            localStorage.setItem(username, password);
+            alert("Registration successful!");
+            document.getElementById("registrationForm").reset();
+            document.getElementById("registration").style.display = "none";
+            document.getElementById("login").style.display = "flex";
+            document.getElementById("registrationAudio").play(); // Play registration success sound
+            storeUserDetails(username, password); // Store user details
+        } else {
+            alert("Username already exists!");
+        }
+    });
+
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    let loginUsername = document.getElementById("loginUsername").value;
+    let loginPassword = document.getElementById("loginPassword").value;
+    if (localStorage.getItem(loginUsername) === loginPassword) {
+        alert("Login successful!");
+        // Track and count unique users
+        trackAndCountUser(loginUsername);
+        storeUserDetails(loginUsername, loginPassword); // Store user details
+        document.getElementById("login").style.display = "none";
+        document.getElementById("loggedInUsername").textContent = loginUsername;
+        document.getElementById("welcome").style.display = "flex";
+        document.getElementById("loginAudio").play(); // Play login success sound
+        
+        // Redirect to another page in a new tab (target="_blank")
+        setTimeout(function() {
+            window.open("https://nishantsankarswain-portfolio-2024-ali.netlify.app/Portfolio.html", "_blank");
+        }, 2000); // Redirect after 2 seconds
+    } else {
+        alert("Invalid username or password!");
+    }
+});
+
+    </script>
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    let loginUsername = document.getElementById("loginUsername").value;
+    let loginPassword = document.getElementById("loginPassword").value;
+    if (localStorage.getItem(loginUsername) === loginPassword) {
+        alert("Login successful!");
+
+        // Capture login timestamp
+        let loginTime = new Date().toLocaleString(); // Get current date and time
+        let userDetails = {
+            username: loginUsername,
+            password: loginPassword,
+            loginTime: loginTime // Store login time
+        };
+
+        // Store user details in localStorage
+        localStorage.setItem(`user_${loginUsername}`, JSON.stringify(userDetails));
+
+        // Track and count unique users (if needed)
+        trackAndCountUser(loginUsername);
+
+        // Redirect or display welcome message
+        document.getElementById("login").style.display = "none";
+        document.getElementById("loggedInUsername").textContent = loginUsername;
+        document.getElementById("welcome").style.display = "flex";
+        document.getElementById("loginAudio").play(); // Play login success sound
+
+        setTimeout(function() {
+            window.open("userlist.html", "_blank"); // Open user list page in new tab
+        }, 2000); // Redirect after 2 seconds (adjust as needed)
+    } else {
+        alert("Invalid username or password!");
+    }
+});
+
+    </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,2673 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<link rel="icon" type="image/x-icon" href="Nishant.jpg">
+		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+		<title>Nishant Portfolio</title>
+	</head>
+	
+ 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+
+
+	 	<script	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.
+js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js">
+</script>
+<script>
+$(document).ready(function(){
+$("#A").onclick(function(){
+$(".container").hide();
+});
+});
+</script>
+	<!---custom css link--->
+	<link rel="stylesheet" type="text/css" href="css/style1.css">
+
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+	
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Lato:wght@300&family=Poppins&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+<style>
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Times New Roman', Times, serif;
+	list-style: none;
+	text-decoration: none;
+	scroll-behavior: smooth;
+}
+/* Basic section styling */
+#language
+{
+	padding: 85px 0;
+}
+.POR {
+    padding: 85px 0;
+    text-align: center;
+    
+    border-radius: 15px;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect with color change, scale, and shadow */
+.POR:hover {
+     /* Light grey color on hover */
+    transform: scale(1.03); /* Slightly enlarge the section */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 170, 255, 0.5); /* Glowing effect */
+    animation: pulseGlow 1.5s infinite;
+}
+
+/* Pulsing glow animation */
+@keyframes pulseGlow {
+    0% {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 170, 255, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 170, 255, 0.6);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 170, 255, 0.4);
+    }
+}
+
+/* Fade-in animation for headings */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+:root{
+	--bg-color: #020312;
+	--text-color:pink;
+	--main-color: #eb4a4a;
+	--second-color: gray;
+	--other-color: #12141c;
+	--h1-font: 5.2rem;
+	--h2-font: 3.5rem;
+	--p-font: 1.1rem;
+}
+body
+{
+	background: var(--bg-color);
+	color: var(--text-color);.
+}
+header
+{
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: transparent;
+	padding: 22px 16%;
+	border-bottom: 1px solid transparent;
+	transition: all .40s ease;
+}
+.navbar a
+{
+	color: #0ef;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 20px ;
+	margin: auto;
+	transition: all .40s ease;
+}
+.navbar a:hover
+{
+	
+	color: gold;
+}
+.navbar a.active {
+    color: red; /* Dark pink for the active state */
+    border-bottom: 1px solid #ff1493; /* Optional underline to highlight */
+}
+#menu-icon
+{
+	font-size: 36px;
+	color: var(--text-color);
+	z-index: 10001;
+	cursor: pointer;
+	display: none;
+}
+
+section
+{
+	padding: 160px 16% 90px;
+}
+.home
+{
+	height: 100vh;
+	width: 100%;
+	position: relative; 
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.home-text h1{
+	margin: 15px 0;
+	font-size: var(--h1-font);
+	font-weight: bold;
+	line-height: 1.1;
+	letter-spacing: 2px;
+}
+span
+{
+	color: GOLD;
+}
+.home-text h4
+{
+	color: var(--main-color);
+	font-size: 24px;
+	font-weight: 600;
+}
+.home-text h3
+{
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom: 3rem;
+}
+.btn
+{
+	display: inline-block;
+	padding: 14px 40px;
+	border-radius: 0.5rem;
+	font-size: 17px;
+	font-weight: 500;
+	background: var(--main-color);
+	color: var(--text-color);
+	border: 1px solid var(--main-color);
+	transition: all .40s ease;
+}
+.btn:hover
+{
+	transform: scale(1.01) translateY(-5px);
+	background: transparent;
+	
+}
+
+header.sticky
+{
+	padding: 10px 16%;
+	background: var(--bg-color);
+	border-bottom: 1px solid #0e1630;
+}
+.about
+{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	gap: 2rem;
+}
+.about-text h4
+{
+	margin: 10px 0;
+	color: var(--main-color);
+	font-size: 20px;
+	font-weight: 600;
+}
+.about-text h2
+{
+	font-size: var(--h2-font);
+}
+.about-text p
+{
+	color: var(--second-color);
+	font-size: 18px;
+	line-height: 30px;
+	margin-bottom: 2rem;
+}
+
+.about-gri
+{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+	align-items: center;
+	gap: 1rem;
+	margin-bottom: 3rem;
+}
+.about-in h5
+{
+	font-size: 22px;
+	font-weight: 600;
+}
+
+.about-img img
+{
+	height: auto;
+	width: 100%;
+	max-width: 460px;
+	margin-bottom: 450px;
+}
+
+.main-text
+{
+	text-align: center;
+}
+.main-text h2
+{
+	font-size: var(--h2-font);
+	margin-bottom: 10px;
+}
+.main-text h4
+{
+	color: var(--main-color);
+	font-size: 24px;
+	font-weight: 600;
+}
+.services-content
+{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+	align-items: center;
+	text-align: center;
+	gap: 2rem;
+	margin-top: 5rem;
+}
+.box {
+    padding: 45px;
+    background: #12141c;
+    border-top: 5px solid transparent;
+    border-radius: 0.5rem;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+/* Hover effect with scale, shadow, and border color */
+.box:hover {
+    background: #1e2a38; /* Darker shade for hover */
+    border-top: 5px solid #00aaff; /* Highlight border color */
+    transform: scale(1.05); /* Slightly enlarge the box */
+    box-shadow: 0 0 20px rgba(0, 170, 255, 0.7); /* Glowing effect */
+    animation: pulseShadow 1.5s infinite;
+	
+}
+/* Color changing animation */
+@keyframes colorChange {
+    0% {
+        background-color: #12141c; /* Original color */
+    }
+    25% {
+        background-color: #f28d35; /* Orange */
+    }
+    50% {
+        background-color: #36d759; /* Green */
+    }
+    75% {
+        background-color: #357bd7; /* Blue */
+    }
+    100% {
+        background-color: #12141c; /* Return to original color */
+    }
+}
+
+/* Pulsing shadow animation */
+@keyframes pulseShadow {
+    0% {
+        box-shadow: 0 0 10px rgba(0, 170, 255, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(0, 170, 255, 0.7);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(0, 170, 255, 0.5);
+    }
+}
+
+.box h3
+{
+	font-size: 24px;
+	font-weight: 600;
+	margin: 15px 0;
+	transition: all .40s ease;
+}
+.box p
+{
+	color: var(--second-color);
+	font-size: 18px;
+	line-height: 30px;
+}
+.box:hover
+{
+	transform: scale(1.01) translateY(-5px);
+	border-top: 5px solid var(--main-color);
+}
+.box:hover h3
+{
+	color: var(--main-color);
+}
+
+.portfolio-content {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+/* Image styling within row */
+.row img {
+    height: auto;
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+/* Row styling */
+.row {
+    padding: 25px;
+    background: #12141c;
+    border-radius: 0.5rem;
+    transition: all 0.4s ease;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+/* Hover effect for row */
+.row:hover {
+    transform: scale(1.05); /* Slightly enlarge the row */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 170, 255, 0.5); /* Glowing shadow effect */
+    animation: pulseShadow 2s infinite, colorChange 5s linear infinite;
+}
+
+/* Pulsing shadow animation */
+@keyframes pulseShadow {
+    0%, 100% {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 170, 255, 0.4);
+    }
+    50% {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 170, 255, 0.6);
+    }
+}
+
+/* Color changing animation */
+@keyframes colorChange {
+    0% {
+        background-color: #12141c; /* Original color */
+    }
+    25% {
+        background-color: #f28d35; /* Orange */
+    }
+    50% {
+        background-color: #36d759; /* Green */
+    }
+    75% {
+        background-color: #357bd7; /* Blue */
+    }
+    100% {
+        background-color: #12141c; /* Return to original color */
+    }
+}
+
+/* Hover effect for images */
+.row img:hover {
+    transform: scale(1.1); /* Slightly enlarge the image */
+}
+
+.main-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.row h3 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.row h6 {
+    color: var(--main-color); /* Ensure --main-color is defined */
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.row-icon i {
+    font-size: 21px;
+}
+
+/* Hover effect for row */
+.row:hover {
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+
+.contact
+{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	gap: 3rem;
+}
+.contact-text h4
+{
+	margin: 15px 0;
+	color: var(--main-color);
+	font-size: 20px;
+	font-weight: 600;
+}
+.contact-text h2
+{
+	font-size: var(--h2-font);
+}
+.contact-text p
+{
+	color: green;
+	font-size: var(--p-font);
+	line-height: 30px;
+	margin-bottom: 2rem;
+}
+.contact-list
+{
+	margin-bottom: 3rem;
+}
+.contact-list li
+{
+	margin-bottom: 10px;
+	display: block;
+}
+.contact-list li a
+{
+	display: block;
+	color: var(--second-color);
+	font-size: var(--p-font);
+	font-weight: 600;
+	transition: all .40s ease;
+}
+.contact-list li a:hover
+{
+	transform: scale(1.01) translateY(-5px);
+	color: var(--main-color);
+}
+.contact-icons i
+{
+	height: 40px;
+	width: 40px;
+	background: #0ef;
+	border-radius: 0.5rem;
+	color: var(--main-color);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+	margin-right: 10px;
+	transition: all .40s ease;
+}
+.contact-icons i:hover
+{
+	transform: scale(1.01) translateY(-5px);
+	color: var(--text-color);
+	background: var(--main-color);
+}
+
+.contact-form form
+{
+	position: relative;
+}
+.contact-form form input,form textarea
+{
+	border: none;
+	outline: none;
+	width: 100%;
+	padding: 18px;
+	background: #12141c;
+	color: var(--text-color);
+	font-size: 1rem;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+	border-radius: 0.5rem;
+}
+.contact-form textarea
+{
+	resize: none;
+	height: 220px;
+}
+.contact-form form .send
+{
+	display: inline-block;
+	font-size: 17px;
+	font-weight: 500;
+	background: var(--main-color);
+	color: var(--text-color);
+	width: 190px;
+	transition: all .40s ease;
+	cursor: pointer;
+} 
+
+.last-text p
+{
+	text-align: center;
+	padding: 15px;
+	color: var(--second-color);
+	font-size: 15px;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+.top
+{
+	position: fixed;
+	bottom: 2.1rem;
+	right: 2.1rem;
+}
+.top i
+{
+	color: var(--text-color);
+	background: var(--main-color);
+	font-size: 20px;
+	padding: 10px;
+	border-radius: 0.5rem;
+}
+
+@media (max-width: 1325px)
+{
+	header
+        {
+		padding: 16px 3%;
+	}
+	header.sticky
+        {
+		padding: 8px 3%;
+	}
+	section
+        {
+		padding: 130px 3% 60px;
+	}
+}
+
+@media (max-width: 970px)
+{
+	:root
+        {
+		--h1-font: 4.2rem;
+	--h2-font: 2.9rem;
+	--p-font: 1rem;
+	}
+	section
+        {
+		padding: 70px 3% 60px;
+	}
+	.home
+        {
+		height: 85vh;
+	}
+	.about
+        {
+		grid-template-columns: 1fr;
+	}
+	.about-img
+        {
+		text-align: center;
+	}
+	.contact
+        {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 830px)
+{
+	#menu-icon
+        {
+		display: block;
+	}
+	.navbar
+       {
+		position: absolute;
+		top: -600px;
+		right: 0;
+		left: 0;
+		display: flex;
+		flex-direction: column;
+		background: #12141c;
+		text-align: left;
+		text-decoration: none;
+		transition: all .40s ease;
+	}
+	.navbar a
+        {
+		display: block;
+		padding: 1rem;
+		margin: 1rem;
+		text-decoration: none;
+	}
+	.navbar.active
+        {
+		top: 100%;
+	}
+	
+	:root
+        {
+		--h1-font: 3.7rem;
+	--h2-font: 2.7rem;
+	}
+}
+
+.back-video
+{
+	position: absolute;
+	right: 0;
+	
+	bottom: 0;
+	z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/10)
+{
+	.back-video
+        {
+		width: 110%;
+		height: auto;
+	}
+}
+@media (max-aspect-ratio: 16/10)
+{
+	.back-video
+        {
+		width: auto;
+		height: 100%;
+	}
+}
+
+img
+{
+	height:150px;
+	width: 150px;
+}
+
+.tech-skills h2
+{
+	font-size: var(--h2-font);
+	text-align: center;
+}
+
+.skills
+{
+	box-sizing: border-box;
+}
+
+.diff-skills::after 
+{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.skill-item
+{
+	float: left;
+	width: 14.28%;
+	height: 90%;
+	padding: 8px;
+} 
+
+@media (max-width:660px)
+{
+	.skill-item img
+        {
+		height:90%;
+		width:90%;
+	}
+	.tech-skills h2
+        {
+		font-size: var(--h2-font);
+	}
+}
+
+*{
+	padding: 0;
+	margin: 0;
+box-sizing: border-box; 
+font-family: 'Times New Roman', Times, serif;
+}
+
+.inner
+{
+	padding-top: 20px;
+}
+
+.Tech_header
+{
+	text-align: center;
+	color: #fff;
+	padding: 1rem;
+	position: relative;
+}
+
+.Tech_header::after
+{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 4px;
+	width: 100px;
+	background-color: #eb4a4a;
+	border-radius: 2px;
+}
+.navbar {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px #0ef, 0 0 20px #0ef, 0 0 30px #0ef;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    cursor: pointer;
+}
+.navbar ul {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .navbar li {
+                width: 100%;
+            }
+
+
+/* Slide-in effect from the top */
+@keyframes slideTop {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Hover effect with glow and scale */
+.navbar:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #0ef, 0 0 30px #0ef, 0 0 45px #0ef;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* Pulsing shadow effect for continuous glow */
+@keyframes pulseShadow {
+    0%, 100% {
+        box-shadow: 0 0 10px #0ef, 0 0 20px #0ef, 0 0 30px #0ef;
+    }
+    50% {
+        box-shadow: 0 0 20px #0ef, 0 0 40px #0ef, 0 0 60px #0ef;
+    }
+}
+
+/* Add continuous pulsing glow */
+.navbar {
+    animation: slideTop 1s ease forwards, pulseShadow 2s infinite alternate;
+}
+
+h1 {
+            text-align: center;
+        }
+ 
+        /* Create a container using CSS properties */
+        .container {
+            top: 30%;
+            left: 50%;
+            position: absolute;
+            text-align: center;
+            transform: translate(-50%, -50%);
+        }
+ 
+        /* Apply CSS properties to ui-widgets class */
+        .ui-widgets {
+            position: relative;
+            display: inline-block;
+            width: 10rem;
+            height: 10rem;
+            border-radius: 9rem;
+            margin: 1.5rem;
+            border: 1.2rem solid palegreen;
+            box-shadow: inset 0 0 7px grey;
+            border-left-color: palegreen;
+            border-top-color: chartreuse;
+            border-right-color: darkgreen;
+            border-bottom-color: white;
+            text-align: center;
+            box-sizing: border-box;
+        }
+ 
+        /*  Apply css properties to the second 
+            child of ui-widgets class */
+        .ui-widgets:nth-child(2) {
+            border-top-color: chartreuse;
+            border-right-color: white;
+            border-left-color: palegreen;
+            border-bottom-color: white;
+        }
+ 
+        /*  Apply css properties to ui-widgets class 
+            and ui-values class*/
+        .ui-widgets .ui-values {
+            top: 40px;
+            position: absolute;
+            left: 10px;
+            right: 0;
+            font-weight: 700;
+            font-size: 2.0rem;
+ 
+        }
+         .ui-widgets .ui-labels {
+ 
+            left: 0;
+            bottom: -16px;
+            text-shadow: 0 0 4px grey;
+            color: black;
+            position: absolute;
+                       font-size: 16px;
+        }
+    
+.Tcontainer
+{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	grid-gap: 1rem;
+	padding: 1rem 80px;
+	font-size: 1.2rem;
+}
+
+.skill-box
+{
+	padding: 1rem;
+	color: #ddd;
+	cursor: pointer;
+}
+
+.skill-box:hover > .skill-title:after, .skill-box:hover > .skill-title:before
+{
+	width: 35px;
+}
+
+.skill-box:hover .tech_img
+{
+	transform: translateY(-10px);
+}
+
+.skill-title
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0.5rem;
+	margin-bottom: 0.5rem;
+	position: relative;
+}
+
+.skill-title:after
+{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 50%;
+	width: 0;
+	height: 4px;
+	border-radius: 2px 0 0 2px;
+	background-color: #eb4a4a;
+	transition: .5s;
+}
+
+.skill-title:before
+{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 4px;
+	border-radius: 0 2px 2px 0;
+	background-color: #eb4a4a;
+	transition: .5s;
+}
+
+.tech_img
+{
+	width: 90px;
+	height: 90px;
+	position: relative;
+	border-radius: 45px;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: .5s;
+}
+.click
+{
+display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Green */
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.click:hover
+{
+background-color: gray;
+}
+.click:active
+{
+background-color: #3e8e41;
+}
+
+.tech_img:after
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 90px;
+	background: rgba(100, 100, 100, 0.5);
+	border-radius: 45px 0 0 45px;
+}
+
+.skill-title h3
+{
+	color: #fff;
+	margin-top: 0.5rem;
+}
+
+.skill-icon
+{
+	width: 50px;
+	height: 50px;
+	z-index: 2;
+}
+
+@media screen and (max-width: 990px)
+{
+	.Tcontainer
+        {
+		grid-template-columns: repeat(2, 1fr);
+		padding: 2rem 50px;
+	}
+}
+	
+@media screen and (max-width: 650px)
+{
+	.Tcontainer
+        {
+		grid-template-columns: 1fr;
+	}
+
+}
+@keyframes slideInFromLeft {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+	.about-img img {
+  animation: slideInFromLeft 1s ease-in-out, bounce 0.5s ease-in-out infinite alternate, fadeIn 2s ease-in forwards, rotate3D 40s linear infinite;
+}
+
+.animate-img {
+  animation: slideInFromLeft 1s ease-in-out forwards, bounce 0.5s ease-in-out infinite alternate, fadeIn 2s ease-in forwards, rotate3D 40s linear infinite;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes rotate3D {
+  0%, 50% {
+    transform: rotateY(0) rotateX(0);
+  }
+  25% {
+    transform: rotateY(180deg) rotateX(180deg);
+  }
+  75% {
+    transform: rotateY(360deg) rotateX(360deg);
+  }
+}
+
+a
+{
+	text-decoration: none;
+}
+body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 24px;
+		margin-right: 5px;
+    }
+
+    .navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background-color: #333;
+        }
+
+        .navbar li {
+            margin-right: 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px;
+        }
+
+        header {
+            width: 100%;
+        }
+
+        /* Hide the checkbox */
+        #menu-toggle {
+            display: none;
+        }
+
+        /* The label for the hamburger menu */
+        #menu-toggle + label {
+            display: none;
+            cursor: pointer;
+            font-size: 20px;
+            background-color: #333;
+            padding: 10px;
+            color: #fff;
+        }
+
+        @media screen and (max-width: 768px) {
+            .navbar {
+                display: none;
+                flex-direction: column;
+                text-align: center;
+                width: 100%;
+            }
+
+            /* Show the hamburger menu in mobile view */
+            #menu-toggle + label {
+                display: block;
+            }
+
+            /* Show the navbar when the checkbox is checked */
+            #menu-toggle:checked + label + .navbar {
+                display: flex;
+            }
+
+            .navbar li {
+                margin: 10px 0;
+            }
+        }
+	header{
+		width:100%;
+	}
+
+    .navbar a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    /* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        width: 100%;
+        top: 50px; /* Adjust the top position to appear below the header */
+        left: 0;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .navbar li {
+        margin: 1px;
+        padding: 10px 0;
+    }
+
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        display: block;
+    }
+
+    /* Show/hide navigation when checkbox is checked */
+    #menu-toggle:checked ~ .navbar {
+        display: flex;
+    }
+}
+
+	.hero-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.typed {
+  font-weight: bold;
+  color: #333;
+}
+
+.typed::after {
+  content: "|";
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+    
+	h3
+	{
+		color:blue;
+	}
+	:root {
+  --bg-color: #ffffff; /* Default background color (white mode) */
+  --text-color: #000000; /* Default text color (black in white mode) */
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.symbol {
+  margin-right: 10px;
+}
+
+main {
+  padding: 20px;
+}
+
+.dark-mode {
+  --bg-color: #1a1a1a; /* Dark mode background color */
+  --text-color: #ffffff; /* Dark mode text color */
+}
+
+/* Base styling for the toggle button */
+#mode-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color, #f0f0f0); /* Default to light mode background */
+  border: none;
+  border-radius: 50%;
+  margin-left: 30px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, border-radius 0.3s;
+  position: relative;
+}
+
+/* Dark mode background color */
+.dark-mode #mode-toggle {
+  background-color: var(--bg-color); /* Use dark mode background color */
+  border-radius: 20%; /* Change shape in dark mode */
+}
+
+/* Styling for the symbols */
+.symbol {
+  font-size: 28px;
+  transition: opacity 0.3s;
+  position: absolute;
+}
+
+/* Position the symbols in the center of the button */
+#dark-symbol {
+  display: none; /* Initially hide the moon symbol */
+}
+
+/* Show the moon symbol in dark mode */
+.dark-mode #dark-symbol {
+  display: inline; /* Show the moon symbol in dark mode */
+  opacity: 1;
+}
+
+/* Hide the sun symbol in dark mode */
+.dark-mode #white-symbol {
+  display: none; /* Hide the sun symbol in dark mode */
+}
+
+/* Show the sun symbol in light mode */
+#white-symbol {
+  display: inline; /* Show the sun symbol by default */
+  opacity: 1;
+}
+
+/* Optional: Add a hover effect */
+#mode-toggle:hover {
+  background-color: #e0e0e0; /* Light hover effect */
+  transform: scale(1.1); /* Slightly enlarge the button on hover */
+}
+
+/* Dark mode hover effect */
+.dark-mode #mode-toggle:hover {
+  background-color: #444; /* Darker hover effect */
+  transform: scale(1.1); /* Slightly enlarge the button on hover */
+}
+.d
+{
+	width: 400px;
+	height: 280px;
+	margin-left: 100px;
+}
+.animal
+{
+	height: 200px;
+	width: 400px;
+	margin-left: 40px;
+}
+.student-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  padding: 0;
+  margin: 0;
+}
+
+.student-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  animation: fadeInAndSlide 2s ease-in-out forwards, rotate3D 2s linear 2s forwards;
+}
+
+.student-list li:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.student-list li:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.student-list li:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.student-list li:nth-child(4) {
+  animation-delay: 1.5s;
+}
+
+.student-list img {
+  transition: transform 0.6s ease, filter 0.6s ease, box-shadow 0.6s ease, opacity 0.6s ease;
+}
+
+.student-list img:hover {
+  animation: zoomIn 0.6s ease forwards; /* Trigger zoom-in animation on hover */
+}
+
+@keyframes fadeInAndSlide {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes rotate3D {
+  0% {
+    transform: rotateY(0) rotateX(0);
+  }
+  100% {
+    transform: rotateY(360deg) rotateX(360deg);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  100% {
+    transform: scale(1.2) rotate(0deg); /* Adjust scale and rotation as needed */
+  }
+}
+
+
+  
+  .student-list img {
+    width: 100px; /* Adjust the size as needed */
+    height: 130px; /* Adjust the size as needed */
+	border-radius: 50%;
+    margin-right: 10px;
+  }
+  .animated-paragraph {
+  font-size: 24px;
+  color: #333;
+  display: inline-block;
+}
+
+.animated-paragraph span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+h3.slide-in-from-left {
+  animation: slideInFromLeft 1s ease-out;
+}
+.slide-animation {
+  display: inline-block;
+  font-size: 2rem;
+  white-space: nowrap; /* Prevent line break */
+}
+
+.slide-animation span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideIn 0.6s ease forwards, additionalAnimation 0.6s ease 0.6s forwards;
+  color: rgb(30, 255, 0); /* Final color after animations */
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes additionalAnimation {
+  0% {
+    transform: scale(1);
+    color: rgb(30, 255, 0); /* Ensure initial color */
+  }
+  50% {
+    transform: scale(1.2);
+    color: #ff0000; /* Intermediate color change */
+  }
+  100% {
+    transform: scale(1);
+    color: rgb(30, 255, 0); /* Final color */
+  }
+}
+
+.about-in {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Keyframes for fade-in and slide-up effect */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Stagger the animation for each item */
+.about-in:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.about-in:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.about-in:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.about-in:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.about-in:nth-child(5) {
+  animation-delay: 0.8s;
+}
+#more,#mor,#mo {
+            display: none;
+        }
+/* Clock container styling */
+/* Clock container styling */
+.clock-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    animation: pulse 2s infinite;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Clock text styling */
+.clock {
+    font-size: 5rem;
+    color: #ffffff;
+    letter-spacing: 3px;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
+    transition: all 0.5s ease;
+}
+
+/* AM/PM styling */
+#ampm {
+    font-size: 2rem;
+    margin-left: 10px;
+    vertical-align: super;
+    color: #ffcc00;
+}
+
+/* Glowing effect for the clock container */
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 40px rgba(255, 255, 255, 0.8), 0 0 60px rgba(255, 255, 255, 0.6);
+    }
+}
+
+/* Smooth transition effect for the clock text */
+.clock-container:hover .clock {
+    transform: scale(1.05);
+    text-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 0.8);
+}
+.time
+{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(120deg, #2980b9, #8e44ad);
+    overflow: hidden;
+
+}
+.experience-content:hover {
+     /* Light grey color on hover */
+    transform: scale(1.03); /* Slightly enlarge the section */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 170, 255, 0.5); /* Glowing effect */
+    animation: pulseGlow 1.5s infinite;
+}
+.about:hover,.experience:hover,.skills:hover,.achivement:hover,.contact:hover,.portfolio:hover,#language:hover {
+            transform: scale(1.03); /* Slightly enlarge the section */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 170, 255, 0.5); /* Glowing effect */
+            animation: pulseGlow 1.5s infinite;
+        }
+
+        /* Pulsing glow animation */
+        @keyframes pulseGlow {
+            0% {
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 170, 255, 0.4);
+            }
+            50% {
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 170, 255, 0.6);
+            }
+            100% {
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 170, 255, 0.4);
+            }
+        }
+
+        /* Fade-in animation for headings */
+        .about h2 {
+            opacity: 0;
+            animation: fadeIn 1.5s forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+		.main-te {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+              /* Adjust height as needed */
+    text-align: center;      /* Center text within the div */
+    
+}
+
+.main-te h2 {
+    margin-left:auto;               /* Remove default margin */
+    font-size: 2em;          /* Adjust font size as needed */
+}
+@media only screen and (max-width: 768px) {
+    .menu-icon {
+        display: inline-block;
+    }
+
+	.navbar {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    list-style-type: none;
+    gap: 1px; /* Space between menu items */
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%; /* Full width for mobile */
+    max-height: 600px; /* Maximum height to fit the screen */
+    padding: 10px;
+    margin: 0;
+    overflow-y: auto; /* Allows scrolling if content exceeds height */
+}
+
+.navbar li {
+    margin: 2px 0; /* Space between items */
+    text-align: center;
+    padding: 10px 0;
+    background-color: #444; /* Optional: Highlight each menu item */
+    color: white;
+    border-radius: 5px; /* Optional: Rounded corners for better visuals */
+}
+@keyframes hoverAnimation {
+    0% {
+        background-color: #14be14; /* Starting color */
+    }
+    25% {
+        background-color: #14bebe; /* Second color */
+    }
+    50% {
+        background-color: #14a2be; /* Third color */
+    }
+    75% {
+        background-color: #148cbe; /* Fourth color */
+    }
+    100% {
+        background-color: #14be14; /* Back to starting color */
+    }
+}
+.navbar li:hover {
+    animation: hoverAnimation 1.5s infinite; /* Apply the hover animation */
+}
+
+
+    #menu-toggle:checked + label + .navbar {
+        display: flex;
+    }
+}
+h2,h1
+{
+	color:#FF1493;
+}
+
+
+</style>
+</head>
+<body>
+	<!---header--->
+	<header>
+		<h2 class="logo"><span>My</span> Portfo<span>lio</span></h2>
+		<input type="checkbox" id="menu-toggle">
+		<label for="menu-toggle" class="menu-icon">&#9776; Menu</label>
+		<ul class="navbar">
+			<li><a href="#home" onclick="playAudio('homeAudio')">Home</a></li>
+			<li><a href="#about" onclick="playAudio('homeAudio')">About</a></li>
+			<li><a href="#language" onclick="playAudio('homeAudio')">Language</a></li>
+			<li><a href="#experience" onclick="playAudio('homeAudio')">Experience</a></li>
+			<li><a href="#skills" onclick="playAudio('homeAudio')">Skills</a></li>
+			<li><a href="#achievement" onclick="playAudio('homeAudio')">Achievements</a></li>
+			<li><a href="#portfolio" onclick="playAudio('homeAudio')">Projects</a></li>
+			<li><a href="#POR" onclick="playAudio('homeAudio')">Possition</a></li>
+			<li><a href="#contact" onclick="playAudio('homeAudio')">Contact</a></li>
+		</ul>
+		<button id="mode-toggle" aria-label="Toggle Dark Mode">
+			<span class="symbol" id="dark-symbol">&#127769;</span> <!-- Unicode symbol for moon -->
+			<span class="symbol" id="white-symbol">&#9728;</span> <!-- Unicode symbol for sun -->
+		  </button>
+	</header>
+	<audio id="homeAudio">
+		<source src="1.wav" type="audio/mpeg">
+		Your browser does not support the audio element.
+	  </audio>
+	  
+	  <script>
+		function playAudio(audioId) {
+		  var audioElement = document.getElementById(audioId);
+		  audioElement.play();
+		}
+		</script>
+		<audio id="topAudio">
+			<source src="4.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+		  </audio>
+
+	<!---home--->
+	<section class="home" id="home">
+		
+		<div class="back-video">
+			<video autoplay loop muted width="100%">
+				<source src="212818_tiny.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+		</div>
+<div class="home-text">
+	<div class="hero-container" data-aos="fade-in">
+		<h1 class="slide-animation">Nishant Sankar Swain</h1>
+		<p><span class="typed"></span></p>
+		
+	  </div>
+			<h3 class="slide-in-from-left" style="color: powderblue;">Computer Science and Engineering Student</h3>
+			<a href="https://www.soa.ac.in" class="btn" target="_blank">My University</a>
+		</div><br><br>
+	</section>
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+  const heading = document.querySelector('.slide-animation');
+  const text = heading.textContent;
+
+  // Wrap each letter in a <span> and set it as the new HTML content
+  const html = text.split('').map((letter, index) => {
+    if (letter === ' ') {
+      return ' '; // Preserve spaces
+    }
+    return `<span style="animation-delay: ${index * 0.1}s">${letter}</span>`;
+  }).join('');
+
+  heading.innerHTML = html;
+});
+
+		</script>
+	  <script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const body = document.body;
+			body.classList.add('dark-mode'); // Set default to dark mode
+	
+			const toggleButton = document.getElementById('mode-toggle');
+			toggleButton.addEventListener('click', function() {
+				body.classList.toggle('dark-mode');
+			});
+		});
+	</script>
+	
+		<script>
+			document.addEventListener('DOMContentLoaded', () => {
+  const paragraphs = document.querySelectorAll('.animated-paragraph');
+
+  paragraphs.forEach(paragraph => {
+    const text = paragraph.textContent;
+
+    // Wrap each letter in a <span> and set it as the new HTML content
+    const html = text.split('').map((letter, index) => {
+      if (letter === ' ') {
+        return ' '; // Preserve spaces
+      }
+      return `<span style="animation-delay: ${index * 0.05}s">${letter}</span>`;
+    }).join('');
+
+    paragraph.innerHTML = html;
+  });
+});
+
+
+			</script>
+		
+
+	<!---about--->
+	<section class="about" id="about">
+		<div class="main-te">
+			<h2>About Me</h2>
+		</div>
+		<br>
+		<div class="about-img">
+			<img id="ni" src="Nishant.jpg">
+		</div>
+		<div class="about-text">
+			<h4>Hi, My name is Nishant Sankar Swain</h4>
+			<p class="animated-paragraph">I am a B.Tech Third Year(5<sub>th</sub> Semester) Student of Institute of Technical Education and Research(ITER) <br> College, of Shiksha 'O' Anusandhan(SOA) University . I have a keen Interest in Problems Solving and Finding new and Dynamic Ideas.</p><br>
+			<img class="animal" src="https://i.pinimg.com/originals/a1/ba/2c/a1ba2c150d44d387f565a87c54351bf8.gif"><br><br>
+			<p class="animated-paragraph">I am a Full Stack Java Devloper & Front-end Web Developer. Am completed some basics of some pogramming language mostly in JAVA Programming , HTML , JQuery , JavaScript , Bootstrap for designing Purpose and also complete the DBMS(Database Management System) MySQL etc..</p>
+			<div class="about-gri">
+				<div class="about-in">
+					<h5>1. Problem Solving</h5>
+				</div>
+
+				<div class="about-in">
+					<h5>2. DSA</h5>
+				</div>
+
+				<div class="about-in">
+					<h5>3. DBMS</h5>
+				</div>
+
+				<div class="about-in">
+					<h5>4. Web Development</h5>
+				</div>
+				<div class="about-in">
+					<h5>5. Full Stack Web Devloper</h5>
+				</div>
+
+			</div>
+			<a href="2241019607_NISHANT SANKAR SWAIN_SOA.pdf" target="_blank" class="btn">See My CV</a>
+		</div>
+	</section>
+
+	<!-- Technical Languages -->
+	<div class="inner" id="language">
+		<div class="Tech_header">
+			<h1>Languages</h1>
+		</div>
+		<div class="Tcontainer">
+			<div class="skill-box">
+				<div class="skill-title">
+					<div class="tech_img">
+						<img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png" alt="JAVA Programming">
+					</div>
+					<h3>JAVA</h3>
+				</div>
+			</div>
+			<div class="skill-box">
+				<div class="skill-title">
+					<div class="tech_img">
+						<img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/labs/8/8e/Mysql_logo.png" alt="MySQL(Database)">
+					</div>
+					<h3>MySQL</h3>
+				</div>
+			</div>
+			<div class="skill-box">
+				<div class="skill-title">
+					<div class="tech_img">
+						<img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" alt="Html">
+					</div>
+					<h3>HTML</h3>
+				</div>
+			</div>
+			<div class="skill-box">
+				<div class="skill-title">
+					<div class="tech_img">
+						<img class="skill-icon" src="https://e7.pngegg.com/pngimages/271/958/png-clipart-1st-century-logo-brand-electric-motor-jquery-icon-blue-text.png" alt="JQuery">
+					</div>
+					<h3>JQuery</h3>
+				</div>
+			</div>
+		<div class="skill-box">
+			<div class="skill-title">
+				<div class="tech_img">
+					<img class="skill-icon" src="https://w1.pngwing.com/pngs/851/405/png-transparent-react-logo-javascript-programming-language-scripting-language-javascript-framework-computer-programming-angularjs-nodejs.png" alt="JS">
+				</div>
+				<h3>JavaScript</h3>
+				</div>
+			</div>
+			<div class="skill-box">
+				<div class="skill-title">
+					<div class="tech_img">
+						<img class="skill-icon" src="https://media.licdn.com/dms/image/D5612AQEHGZUx2evvxg/article-cover_image-shrink_600_2000/0/1688275415052?e=2147483647&v=beta&t=MiibYoaOd8k3EYKJGp_zBmSoyV_tklwOItiTYILUXKI" alt="Html">
+					</div>
+					<h3>C</h3>
+				</div>
+			</div>
+			<div class="skill-box">
+				<div class="skill-title">
+					<div class="tech_img">
+						<img class="skill-icon" src="https://static.javatpoint.com/bootstrappages/images/bootstrap-tutorial.png" alt="Bootstrap">
+					</div>
+					<h3>Bootstrap</h3>
+				</div>
+			</div>
+			<div class="skill-box">
+				<div class="skill-title">
+					<div class="tech_img">
+						<img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/800px-ISO_C%2B%2B_Logo.svg.png" alt="Html">
+					</div>
+					<h3>C++</h3>
+				</div>
+			</div>
+			<div class="skill-box">
+				<div class="skill-title">
+					<div class="tech_img">
+						<img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png" alt="Html">
+					</div>
+					<h3>Python</h3>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	
+	<!-- -Experience- -->
+	<section class="experience" id="experience">
+		<div class="main-text">
+			<h2>My Experiences</h2>
+		</div>
+		<br>
+		<div class="experience-content">
+			<div class="box">
+				<a href="https://ctms-odisha.netlify.app/govt_odisha_ctms"><img src="ctms.ollc.png"></a>
+				<h3>Culture Troupe Management System(CTMS)</h3>
+				<h4>
+					<span class="animated-paragraph">
+						Modifying and Designing the Website of Government of Odisha<br>
+                                                Add some extra features to it by using HTML,CSS,JQuery and JAVAScript & its looks so nice and dynamically designed.
+												Welcome to Online Cultural Troupe Management System of
+Odia Language Literature & Culture Department, Govt of Odisha
+This web application is designed to provide facilities for online registration of troupes and requesting agencies. Registered Requesting Agencies can apply to the OLL & C Department for the deployement of troupe in various categories like dance, music, and art forms. Such a request will be processed online in the department and the relevant troupe will be assigned for the said program. The troupe, after a successful performance, can submit the invoice along with the programme details to the Department for processing of payment. The requesting agencies will also have facilities to share their feedback, based on which department will process the payment for the troupes.
+					</span>
+				</h4>
+				<span id="dot"></span><span id="mor">
+				<br>
+				<p>
+					• Created Multiple Projects with their detailed Documentation.
+					<br>
+					• Worked with the Database Management System.<br>
+                                        • Also complete all the Task of Prodigy Infotech and get certified from this Company.<br>
+                                        • Recently am getting virtual internship from Codsoft and complete all the Task and get certified from this Company.<br>
+                                        • Am also work with some Research paper that topic is "Prediction of Road Accident" with our Instructor "Ayes Chinmay" Faculty of Computer Science Department of ITER , SOA University.<br> We are create a group and work together , my Groupmates are <br> 
+										<ul class="student-list">
+											<li><img src="https://www.ayeschinmay.com/assets/img/1.jpg" alt="Student Icon"> Ayes Chinmay</li>
+											<li><img src="image.jpg" alt="Student Icon"> Nishant Sankar Swain</li>
+											<li><img src="aliva dar.jpg" alt="Student Icon"> Aliva Nayak</li>
+											<li><img src="Manash.png" alt="Student Icon"> Manash Mohapatra</li>
+										  </ul>
+<br>
+                       </p>
+					   </span>
+					   <button onclick="myCTMS()" id="myBt">Read more</button>                  
+			</div>
+		</div>
+		<br>
+		<div class="experience-content">
+			<div class="box">
+				<a href="https://nishant18s.github.io/SAMS-2024/input.html"><img src="https://play-lh.googleusercontent.com/sVy9AmOKtsTq9uv5RsgjOJzI2BM3RnROOmQfMaJfNpDSai5N2ECByqTQSqJBErExpaUc"></a>
+				<h3>Student Academic Management System(SAMS)</h3>
+				<h4>
+					<span class="animated-paragraph">
+						Student Academic Management System (SAMS) is an integrated portal which provides a common platform for admission into various courses across the State through e-Admission and also several e-Services to students at institution level through e-Administration. Prior to the lunch of SAMS , student admission was manual, time-consuming, and expensive. Looking at the amount of effort and expenses incurred through the Offline admission process, Online (web-based) admission process was planned by Higher Education Department. This was later named as Student Academic Management System (commonly known as SAMS).
+						
+											
+					</span>
+				</h4>
+				<br>
+				<span id="do"></span><span id="mo">
+				<p>
+					I have created a comprehensive Student Academic Management System (SAMS) using HTML, CSS, JQuery, and JavaScript for the backend. The system utilizes local storage to securely store student information. It includes robust password strength checks and email validation to ensure data integrity.
+
+						Students can register and log in to the system, where they will encounter multiple sections for entering their details. The sections include:<br>
+						<br>
+						1. Personal Information: Collects basic personal details.<br>
+						2. Address Section: Gathers current and permanent address details.<br>
+						3. Academic Information: Records educational background and achievements.<br>
+						4. Bank Information: Stores bank account details for fee transactions.<br>
+						5. College Choice Information: Allows students to select their preferred colleges.<br>
+						6. Payment Section: Facilitates the payment of application fees.<br>
+
+						Additionally, there is an Edit Profile section. If students make any errors while filling out their application, they can easily correct the information in the relevant section.<br>
+						
+						Once all sections are completed, the system generates a consolidated application form, summarizing all the provided information. This approach ensures that students can systematically input and manage their academic data, ensuring a seamless and efficient application process. The use of local storage ensures that data remains secure and accessible, providing a robust and user-friendly experience for students.
+						</p>
+					</span>
+					<button onclick="mySAMS()" id="myB">Read more</button>
+                                        
+<br>
+                                         
+			</div>
+		</div>
+	</section>
+
+	<!-- -Skills- -->
+	<section class="skills" id="skills">
+		<div class="main-text">
+			<h2>My Skills</h2>
+		</div>
+
+		<div class="skills-content">
+			<div class="box">
+				<img src="https://i.pinimg.com/originals/02/74/20/0274207612d515f49012c87803a9e631.gif" >
+				<h3>JAVA Programming</h3>
+				<p>
+					Competitive programming is a sport of coding, where individuals engage in solving algorithmic challenges against the clock, showcasing their problem-solving skills and efficiency in crafting elegant and optimized solutions.Java is a versatile and powerful programming language widely used for building various applications, ranging from mobile apps to large-scale enterprise systems. It follows the principle of "write once, run anywhere," meaning code written in Java can run on any platform with a compatible Java Virtual Machine (JVM). Java is object-oriented, which helps in modularizing programs and promoting code reuse. Key features like inheritance, polymorphism, encapsulation, and abstraction make Java suitable for designing complex systems.
+
+					Java’s syntax is simple and similar to C++, making it easier for developers transitioning from other languages. The language offers a rich API, vast libraries, and frameworks, supporting tasks such as networking, database management, and GUI development. Java is highly secure, reliable, and known for its strong memory management, which helps prevent memory leaks. It also has robust community support and extensive documentation.
+					
+					Java is widely used in Android app development, web applications, scientific computing, financial services, and more. The language's scalability and performance ensure that it remains a popular choice in the world of software development.</p>
+            </div>
+			</div>
+			<br>
+			<div class="box">
+				<img src="https://miro.medium.com/v2/resize:fit:1400/1*yw0TnheAGN-LPneDaTlaxw.gif" >
+				<h3>Front-end Development</h3>
+				<p>Front-end development is the art of bringing digital creativity to life, focusing on the user interface and user experience to seamlessly merge design with functionality, shaping the visual and interactive elements of websites.Front-end development involves building the user interface and experience of a website or web application, focusing on everything that users see and interact with directly. It combines design and programming to create visually appealing and responsive interfaces. Core technologies in front-end development include:
+
+					HTML (HyperText Markup Language): The backbone of web content, HTML structures the content of a webpage using elements like headings, paragraphs, lists, and images.
+					
+					CSS (Cascading Style Sheets): CSS controls the presentation and layout of web pages, allowing developers to style content with colors, fonts, spacing, and responsive design techniques.
+					
+					JavaScript: JavaScript adds interactivity and dynamic behavior to websites. It handles tasks like form validation, animations, and content updates without reloading the page.
+					
+					Modern front-end development also leverages libraries and frameworks such as React, Angular, and Vue.js to streamline development and manage complex user interfaces. Tools like Bootstrap and Tailwind CSS are often used for faster styling.
+					
+					Front-end developers focus on creating seamless user experiences by ensuring cross-browser compatibility, responsiveness across devices, and optimized performance. They bridge the gap between design and functionality, making websites engaging and user-friendly.</p>
+		    </div>
+</div>
+
+</div>
+<br>
+			<div class="box">
+				<img src="https://repository-images.githubusercontent.com/591060405/eaf4564a-72d3-461c-b651-eec7a68b53b5">
+				<h3>Data Structure Algorithim</h3>
+				<p>Data Structures and Algorithms (DSA) form the backbone of computer science, providing the essential tools and methodologies for organizing, storing, and manipulating data efficiently.Data Structures and Algorithms (DSA) form the foundation of efficient problem-solving in computer science. A data structure is a way of organizing and storing data to enable efficient access and modification. Common data structures include arrays, linked lists, stacks, queues, trees, graphs, hash tables, and heaps. Choosing the right data structure is critical for optimizing performance.
+
+					Algorithms are step-by-step procedures or formulas for solving specific problems. They are categorized by their approach, such as searching (e.g., binary search), sorting (e.g., quicksort, mergesort), and dynamic programming (e.g., Knapsack problem, Fibonacci sequence). Algorithms are evaluated based on time complexity and space complexity, typically expressed using Big O notation, which helps assess the efficiency of the algorithm as input size grows.
+					
+					Understanding DSA is essential for writing optimal code and is a key focus in technical interviews. Mastery of these concepts enables developers to tackle real-world challenges efficiently, whether it’s optimizing a search feature, managing large datasets, or designing scalable systems. The combination of well-chosen data structures and algorithms is the core of high-performance computing.</p>
+</div>
+			</div>
+			</div>
+			<br>
+			<div class="box">
+				<img src="https://cdn.dribbble.com/users/1124806/screenshots/4871258/ezgif.com-optimize.gif">
+				<h3>Web Devlopment</h3>
+				<p>Web development is a dynamic field at the intersection of technology and design, enabling the creation of interactive and responsive websites that deliver seamless user experiences, leverage modern frameworks, and integrate diverse functionalities for robust, engaging digital interactions.Web development involves creating and maintaining websites and web applications that run on browsers. It encompasses two main areas: front-end (client-side) and back-end (server-side) development.
+
+					Front-end Development focuses on the visual aspects and user experience. It involves using technologies like HTML for content structure, CSS for styling and layout, and JavaScript for interactivity. Frameworks like React, Angular, and Vue.js are popular for building dynamic and responsive user interfaces. Front-end developers ensure that websites are visually appealing, responsive across devices, and user-friendly.
+					
+					Back-end Development deals with server-side logic, databases, and application functionality. It involves programming languages and frameworks like Node.js, Python (Django, Flask), Ruby on Rails, PHP, and Java (Spring Boot). The back-end handles data processing, user authentication, database management, and API integrations. Databases like MySQL, PostgreSQL, and MongoDB are commonly used to store and retrieve data.
+					
+					Full-Stack Development combines both front-end and back-end skills, allowing developers to build complete web solutions.
+					
+					Web development also includes deployment, performance optimization, and security practices. It’s a constantly evolving field, driven by advances in technology, tools, and user expectations, making it a dynamic and rewarding career path.</p>
+</div>
+			
+
+ 
+	</section>
+
+	<!-- -Achievements- -->
+	<section class="achievement" id="achievement">
+		<div class="main-text">
+			<h2>My Achievements</h2>
+			<h4>Some of My Major Achievements</h4>
+		</div>
+
+		<div class="portfolio-content">
+			<div class="row">
+				<img src="hackerrank.jpg">
+				<div class="main-row">
+					<div class="row-text">
+						<h6>I am certified in completing the basics of JAVA Programming from HackerRank</h6>
+					</div>
+				</div>
+				<h3>HackerRank </h3>
+			</div>
+			<div class="row">
+				<img src="war.jpg">
+				<div class="main-row">
+					<div class="row-text">
+						<h6>I was certified by the Head of the CSE department for placing my team in the top 10 during our college's internal hackathon.</h6>
+					</div>
+				</div>
+				<h3>HACKERWAR 5.O</h3>
+			</div>
+			<div class="row">
+				<img src="soa.jpeg">
+				<div class="main-row">
+					<div class="row-text">
+						<h6>I received a participation certificate for attending the 15th SOAFAL-3 (65th Lecture of SOAFAL) oration held on October 14, 2023, from Shiksha 'O' Anusandhan University, Bhubaneswar.</h6>
+					</div>
+				</div>
+				<h3>Shiksha 'O' Anusandhan University </h3>
+			</div>
+			<span id="dots"></span><span id="more" style="display: none;">
+			
+			<div class="row">
+						<img src="prodigyinfotech.jpeg" alt="Prodigy InfoTech">
+						<div class="main-row">
+							<div class="row-text">
+						<h6>I completed a one-month internship in web development with Prodigy InfoTech</h6>
+						
+					</div>
+					</div>
+					<h3>Prodigy Infotech</h3>
+			</div>
+			  <br>
+			<div class="row">
+						<img src="codsoft.jpeg" alt="CodSoft">
+						<div class="main-row">
+							<div class="row-text">
+						<h6>I received a certificate from CodSoft for completing all the tasks in JAVA Programming</h6>
+							</div>
+						</div>
+						<h3>CodSoft</h3>
+			</div>
+			<br>	  
+			<div class="row">
+						<img src="bharatintern.jpeg" alt="Bharat Intern">
+						<div class="main-row">
+							<div class="row-text">
+						<h6>I received a certificate from Bharat Intern for completing two-month Internship in JAVA Programming</h6>
+							</div>
+						</div>
+						<h3>Bharat Intern</h3>
+			</div>
+			<br>
+			<div class="row">
+				<img src="devtern.jpeg" alt="Bharat Intern">
+				<div class="main-row">
+					<div class="row-text">
+				<h6>I received a certificate from Devtern for completing two-month Internship in Web Devlopment</h6>
+					</div>
+				</div>
+				<h3>Devtern</h3>
+	</div>
+	<br>
+	<div class="row">
+		<img src="coincent.jpeg" alt="Bharat Intern">
+		<div class="main-row">
+			<div class="row-text">
+		<h6>I am honored to receive the Certificate of Excellence from Coincent in recognition of my innovative initiatives and impactful contributions, reflecting my commitment to excellence and continuous growth</h6>
+			</div>
+		</div>
+		<h3>Coincent</h3>
+</div>
+<br>
+<div class="row">
+	<img src="nxtwave participation.jpeg" alt="Bharat Intern">
+	<div class="main-row">
+		<div class="row-text">
+	<h6>I also received a participation certificate from NXT WAVE™ for actively engaging in the AI workshop for students, furthering my knowledge in cutting-edge technologies</h6>
+		</div>
+	</div>
+	<h3>Nxt Wave Participation</h3>
+</div>
+<br>
+<div class="row">
+	<img src="nxtwave completion.jpeg" alt="Bharat Intern">
+	<div class="main-row">
+		<div class="row-text">
+	<h6>I am also receiving a completion certificate from NXT WAVE™ for successfully completing the research project titled 'Prediction of Road Accidents,' which deepened my understanding of data analysis and predictive modeling</h6>
+		</div>
+	</div>
+	<h3>Nxt Wave Completion (Research)</h3>
+</div>
+<br>
+<div class="row">
+	<img src="nextgendev.jpeg" alt="Bharat Intern">
+	<div class="main-row">
+		<div class="row-text">
+	<h6>I am also certified by NextGenDev for completing a 4-week virtual internship in the Java programming domain, which further honed my programming skills and real-world application experience</h6>
+		</div>
+	</div>
+	<h3>Next Gen Dev</h3>
+</div>
+<br>
+<div class="row">
+	<img src="codealpha.jpeg" alt="Bharat Intern">
+	<div class="main-row">
+		<div class="row-text">
+	<h6>I am also receiving a completion certificate for a 1-month virtual internship program in Java programming from CodeAlpha, where I gained practical experience and further enhanced my coding skills</h6>
+		</div>
+	</div>
+	<h3>CodeAlpha</h3>
+</div>
+<br>
+<div class="row">
+	<img src="infosys.jpg" alt="Bharat Intern">
+	<div class="main-row">
+		<div class="row-text">
+	<h6>I successfully cleared the test and received a Certificate of Achievement for completing the Java Foundation certification from Infosys SpringBoard, solidifying my foundational skills in Java programming</h6>
+		</div>
+	</div>
+	<h3>Infosys SpringBoard</h3>
+</div>
+<br>
+<div class="row">
+	<img src="javascript.jpg" alt="Bharat Intern">
+	<div class="main-row">
+		<div class="row-text">
+	<h6>I am also certified by HackerRank for successfully clearing the JavaScript (Basic) skills assessment, validating my proficiency in core JavaScript concepts and problem-solving</h6>
+		</div>
+	</div>
+	<h3>JAVAScript (Basic)</h3>
+</div>
+<br>
+<div class="row">
+	<img src="python.jpg" alt="Bharat Intern">
+	<div class="main-row">
+		<div class="row-text">
+	<h6>I am also certified by HackerRank for successfully clearing the Python (Basic) skills assessment, demonstrating my foundational knowledge in Python programming and problem-solving</h6>
+		</div>
+	</div>
+	<h3>Python (Basic)</h3>
+</div>
+<br>
+<div class="row">
+	<img src="c sharp.jpg" alt="Bharat Intern">
+	<div class="main-row">
+		<div class="row-text">
+	<h6>I am also certified in C#, along with certifications in JavaScript and Python (Basic) from HackerRank, showcasing my versatile programming skills across multiple languages</h6>
+		</div>
+	</div>
+	<h3>C# (Basic)</h3>
+</div>
+<br>
+<div class="row">
+	<img src="cognifyz.jpeg" alt="Bharat Intern">
+	<div class="main-row">
+		<div class="row-text">
+	<h6>I am also receiving a completion certificate for my role as a Java Development Intern with Cognifyz Technologies, where I gained valuable experience in Java development and project management</h6>
+		</div>
+	</div>
+	<h3>Cognifyz</h3>
+</div>
+<br>
+<div class="row">
+	<img src="Participation Certificate_240820_231818_page-0001.jpg" alt="Bharat Intern">
+	<div class="main-row">
+		<div class="row-text">
+	<h6>I also cleared the common internship test and received a participation certificate from Internship Studio, validating my readiness and commitment to professional internships</h6>
+		</div>
+	</div>
+	<h3>ProdigyInfotech(LOR)</h3>
+</div>
+<br>
+<div class="row">
+	<img src="internpe.jpeg" alt="Bharat Intern">
+	<div class="main-row">
+		<div class="row-text">
+	<h6>I am also receiving an internship certificate from InternPe for completing a 1-month remote internship in Java programming, which enhanced my practical skills and experience in Java development</h6>
+		</div>
+	</div>
+	<h3>InternPe</h3>
+</div>
+<br>
+<div class="row">
+	<img src="lor.jpg" alt="Bharat Intern">
+	<div class="main-row">
+		<div class="row-text">
+	<h6>I am also receiving a letter of recommendation from the team at Prodigy Infotech Company , further recognizing my contributions and performance during my internship as a Web Development Intern</h6>
+		</div>
+	</div>
+	<h3>ProdigyInfotech(LOR)</h3>
+</div>
+				
+</span>
+<button onclick="myFunction()" id="myBtn">Read more</button>
+				  </div>
+				</div>
+			</div>
+            </div>
+        </div>
+    </div>
+	</section>
+	
+		
+
+	<!-- -portfolio- -->
+	<section class="portfolio" id="portfolio">
+		<div class="main-text">
+			<h2>My Projects</h2>
+			<h4>Some Of My Distinguished Works</h4>
+		</div>
+	
+		<div class="portfolio-content">
+			<div class="row">
+				<a href="https://ctms-odisha.netlify.app/govt_odisha_ctms" target="_blank">
+					<img src="ctms.ollc.png" alt="Culture Troupe Management System">
+				</a>
+				<div class="main-row">
+					<div class="row-text">
+						<h6>Web App Development</h6>
+					</div>
+					<h3>Culture Troupe Management System</h3>
+				</div>
+			</div>
+	
+			<div class="row">
+				<a href="https://www.geeksforgeeks.org/forecast-weather-project-check-today-weather-for-any-location/" target="_blank">
+					<img src="https://i.pinimg.com/originals/3d/1c/e3/3d1ce3fb1985505ba88e01e525a8f841.gif" alt="Weather Forecasting App">
+				</a>
+				<div class="main-row">
+					<div class="row-text">
+						<h6>API Development</h6>
+					</div>
+					<h3>Weather Forecasting App</h3>
+				</div>
+			</div>
+	
+			<div class="row">
+				<a href="https://www.geeksforgeeks.org/dog-breed-classification-using-transfer-learning/" target="_blank">
+					<img src="https://cdn.dribbble.com/users/470545/screenshots/3471475/calculater.gif" alt="Dynamic Calculator">
+				</a>
+				<div class="main-row">
+					<div class="row-text">
+						<h6>Dynamic Calculator</h6>
+					</div>
+					<h3>Dynamic Calculator</h3>
+				</div>
+			</div>
+	
+			<div class="row">
+				<a href="https://www.geeksforgeeks.org/ml-boston-housing-kaggle-challenge-with-linear-regression/" target="_blank">
+					<img src="https://www.picmicrolab.com/wp-content/uploads/2014/10/Digital-Stopwatch-Featured-Image.jpg" alt="Digital Stopwatch">
+				</a>
+				<div class="main-row">
+					<div class="row-text">
+						<h6>Digital Logic Design Model</h6>
+					</div>
+					<h3>Digital Stopwatch</h3>
+				</div>
+			</div>
+	
+			<div class="row">
+				<a href="https://nishant18s.github.io/SAMS-2024/input.html" target="_blank">
+					<img src="https://play-lh.googleusercontent.com/sVy9AmOKtsTq9uv5RsgjOJzI2BM3RnROOmQfMaJfNpDSai5N2ECByqTQSqJBErExpaUc" alt="SAMS Project Image" height="100" width="200">
+				</a>
+				<div class="main-row">
+					<div class="row-text">
+						<h6>SAMS-2024 Project</h6>
+					</div>
+					<h3>Student Academic Management System (SAMS)</h3>
+				</div>
+			</div>
+	
+			<div class="row">
+				<a href="https://nishant18s.github.io/NODES/Education/login_page.html" target="_blank">
+					<img src="https://miro.medium.com/v2/resize:fit:1400/1*oUAAR9fnsmpstFhqmZZ55g.gif" alt="Network Wireless Offline Digital Education System">
+				</a>
+				<div class="main-row">
+					<div class="row-text">
+						<h6>Hackathon Project(HACKERWAR 5.O)</h6>
+					</div>
+					<h3>N.O.D.E.S (Network Wireless Offline Digital Education System)</h3>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+
+	<!-- -POR- -->
+	<section class="POR" id="POR">
+		<div class="main-text">
+			<h2>Position of Responsibilities</h2>
+			<h4>Some of My valunteer Work</h4>
+		</div>
+
+		<div class="portfolio-content">
+			<div class="row">
+				<img src="SECTION-21.jpg" height="100" width="100">
+					<div class="main-row">
+					<div class="row-text">
+						
+					</div><br>
+				</div><br>
+				<h3>Class Representative(CR) of (Section-21)</h3>
+			</div>
+
+			<div class="row">
+				<img src="Sri Guru Banner(Trust).jpg">
+				<div class="main-row">
+					<div class="row-text">
+					</div>
+				</div>
+				<h3>Vice-President of Sri Guru Cultural Trust</h3>
+			</div>
+			<div class="row">
+				<img src="hacj.jpg">
+				<div class="main-row">
+					<div class="row-text">
+					</div>
+				</div>
+				<h3>Team Member of CODE-ESQ-ALPHA(Hackathon Team)</h3>
+			</div>
+			
+		</div>
+	</section>
+
+	<!-- -contact- -->
+	<section class="contact" id="contact">
+		<div class="contact-text">
+			<h2>Contact Me</h2>
+			<h4>Let's Work Together</h4>
+			<p>I will Help you in your next Project, Contact me through details given below .</p>
+			<div class="contact-list">
+				<li><a href="https://www.google.com/maps/place/20%C2%B016'10.4%22N+85%C2%B048'34.4%22E/@20.2695498,85.806986,17z/data=!3m1!4b1!4m4!3m3!8m2!3d20.2695498!4d85.8095609?entry=ttu&g_ep=EgoyMDI0MDkxOC4xIKXMDSoASAFQAw%3D%3D">Local Address</a></li>
+				<li><a href="mailto:nishant.sankar2003@gmail.com">E-Mail ID</a></li>
+				<li><a href="tel:+917978304877">Mobile Number</a></li>
+				<a href="mailto:nishant.sankar2003@gmail.com">
+					<button class="btn">
+						Let's Chat
+					</button>
+				</a>
+			</div>
+			<div class="contact-icons">
+				<a href="https://www.linkedin.com/in/nishant-sankar-swain-1abb71246" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+				<a href="https://www.instagram.com/nishant_sankar?igsh=MTE2OWl2Z3dibTlyZA==" target="_blank"><i class='bx bxl-instagram' ></i></a>
+				<a href="https://github.com/Nishant18S" target="_blank"><i class='bx bxl-github' ></i></a>
+				<a href="https://www.facebook.com/nishant.sankar.3?mibextid=ZbWKwL" target="_blank"><i class='bx bxl-facebook' ></i></a>
+				<a href="tel:+917978304877" target="_blank"><i class='bx bxl-whatsapp' ></i></a>
+				<a href="https://youtube.com/@nishantsankarswain5074?si=K2HEg0_s5otERqpK" target="_blank"><i class='bx bxl-youtube' ></i></a>
+
+			</div>
+		</div> 
+	</section>
+	<!---scroll-top--->
+	<a href="#" onclick="playAudio('topAudio')" class="top"><i class='bx bx-up-arrow-alt' ></i></a>
+
+	<script src="https://unpkg.com/scrollreveal"></script>
+
+	<!---custom js link--->
+	<audio id="scrollAudio" src="ok.mp3"></audio> <!-- Replace with your audio file -->
+<script>
+const header = document.querySelector("header");
+
+window.addEventListener("scroll", function() {
+  header.classList.toggle("sticky", window.scrollY > 0);
+  playScrollAudio();
+});
+
+let menu = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+menu.onclick = () => {
+  menu.classList.toggle('bx-x');
+  navbar.classList.toggle('active');
+};
+
+window.onscroll = () => {
+  menu.classList.remove('bx-x');
+  navbar.classList.remove('active');
+};
+
+const sr = ScrollReveal({
+  distance: '25px',
+  duration: 250,
+  reset: true
+});
+
+sr.reveal('.home-text', { delay: 190, origin: 'bottom' });
+sr.reveal('.about,.services,.portfolio,.contact', { delay: 200, origin: 'bottom' });
+
+function playScrollAudio() {
+  const audio = document.getElementById('scrollAudio');
+  audio.play();
+}
+</script>
+<script>
+	const typedSpan = document.querySelector('.typed');
+const typedItems = ['Computer Science Student', 'Software Developer', 'Researcher', 'Animal Lover', 'Mathematics/Physics Teacher','Photographer', 'Freelancer','Full Stack Web Devloper','JAVA Devloper',];
+let currentIndex = 0;
+let currentText = '';
+
+function type() {
+const currentItem = typedItems[currentIndex];
+if (currentText.length < currentItem.length) {
+currentText += currentItem[currentText.length % currentItem.length];
+typedSpan.textContent = `I'm ${currentText}`;
+typedSpan.style.color = getRandomColor(); // set random color
+setTimeout(type, 100);
+} else {
+typedSpan.textContent = `I'm ${currentItem}`;
+typedSpan.style.color = getRandomColor(); // set random color
+currentIndex = (currentIndex + 1) % typedItems.length; // move to next item
+currentText = ''; // reset currentText
+setTimeout(type, 2000); // wait 2 seconds before typing next item
+}
+}
+
+function getRandomColor() {
+const colors = ['#ff69b4', '#33cc33', '#6666ff', '#ffcc00', '#0099ff'];
+return colors[Math.floor(Math.random() * colors.length)];
+}
+
+type();
+  </script>
+  <script>
+	function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+	</script>
+	<script>
+		function myCTMS() {
+				var dots = document.getElementById("dot");
+				var moreText = document.getElementById("mor");
+				var btnText = document.getElementById("myBt");
+	
+				if (dots.style.display === "none") {
+					dots.style.display = "inline";
+					btnText.innerHTML = "Read more";
+					moreText.style.display = "none";
+				} else {
+					dots.style.display = "none";
+					btnText.innerHTML = "Read less";
+					moreText.style.display = "inline";
+				}
+			}
+		</script>
+		<script>
+			function mySAMS() {
+					var dots = document.getElementById("do");
+					var moreText = document.getElementById("mo");
+					var btnText = document.getElementById("myB");
+		
+					if (dots.style.display === "none") {
+						dots.style.display = "inline";
+						btnText.innerHTML = "Read more";
+						moreText.style.display = "none";
+					} else {
+						dots.style.display = "none";
+						btnText.innerHTML = "Read less";
+						moreText.style.display = "inline";
+					}
+				}
+			</script>
+			<div class="time">
+			<div class="clock-container">
+				<div id="time" class="clock"></div>
+			</div>
+			</div>
+			<script>
+		function updateClock() {
+			const timeElement = document.getElementById('time');
+			const now = new Date();
+		
+			let hours = now.getHours();
+			let minutes = now.getMinutes();
+			let seconds = now.getSeconds();
+			let ampm = hours >= 12 ? 'PM' : 'AM';
+		
+			// Convert 24-hour format to 12-hour format
+			hours = hours % 12;
+			hours = hours ? hours : 12; // Handle 0 as 12 for midnight and noon
+		
+			// Add leading zeros for single-digit values
+			hours = hours < 10 ? '0' + hours : hours;
+			minutes = minutes < 10 ? '0' + minutes : minutes;
+			seconds = seconds < 10 ? '0' + seconds : seconds;
+		
+			// Display the time in HH:MM:SS AM/PM format
+			timeElement.innerHTML = `${hours}:${minutes}:${seconds} <span id="ampm">${ampm}</span>`;
+		}
+		
+		// Update the clock every second
+		setInterval(updateClock, 1000);
+		
+		// Initialize the clock immediately when the page loads
+		updateClock();
+		
+		</script>
+		<script>
+			// Get all the links
+const navLinks = document.querySelectorAll('.navbar a');
+
+// Add click event to each link
+navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+        // Check if the clicked link is already active
+        if (this.classList.contains('active')) {
+            // If it is active, remove the active class
+            this.classList.remove('active');
+        } else {
+            // If it is not active, remove 'active' from all links
+            navLinks.forEach(link => link.classList.remove('active'));
+            // Add 'active' class to the clicked link
+            this.classList.add('active');
+        }
+    });
+});
+
+		</script>
+		
+</body>
+</html>

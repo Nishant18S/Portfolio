@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="C:\Users\nisha\Desktop\Bharat Intern\Nishant.jpg">
+	<title>User Portfolio</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css
+/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+	 	<script	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.
+js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js">
+</script>
+<script>
+$(document).ready(function(){
+$("#A").onclick(function(){
+$(".container").hide();
+});
+});
+</script>
+	<!---custom css link--->
+	<link rel="stylesheet" type="text/css" href="css/style1.css">
+
+	<link rel="stylesheet"
+href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Lato:wght@300&family=Poppins&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+<style>
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif;
+	list-style: none;
+	text-decoration: none;
+	scroll-behavior: smooth;
+}
+
+:root{
+	--bg-color: #020312;
+	--text-color: #fff;
+	--main-color: #eb4a4a;
+	--second-color: gray;
+	--other-color: #12141c;
+	--h1-font: 5.2rem;
+	--h2-font: 3.5rem;
+	--p-font: 1.1rem;
+}
+body
+{
+	background: var(--bg-color);
+	color: var(--text-color);
+}
+header
+{
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: transparent;
+	padding: 22px 16%;
+	border-bottom: 1px solid transparent;
+	transition: all .40s ease;
+}
+.navbar
+{
+	display: flex;
+}
+.navbar a
+{
+	color: #0ef;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 20px ;
+	margin: auto;
+	
+	transition: all .40s ease;
+}
+.navbar a:hover
+{
+	
+	color: gold;
+}
+#menu-icon
+{
+	font-size: 36px;
+	color: var(--text-color);
+	z-index: 10001;
+	cursor: pointer;
+	display: none;
+}
+
+section
+{
+	padding: 160px 16% 90px;
+}
+.home
+{
+	height: 100vh;
+	width: 100%;
+	position: relative; 
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.home-text h1{
+	margin: 15px 0;
+	font-size: var(--h1-font);
+	font-weight: bold;
+	line-height: 1.1;
+	letter-spacing: 2px;
+}
+span
+{
+	color: GOLD;
+}
+.home-text h4
+{
+	color: var(--main-color);
+	font-size: 24px;
+	font-weight: 600;
+}
+.home-text h3
+{
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom: 3rem;
+}
+.btn
+{
+	display: inline-block;
+	padding: 14px 40px;
+	border-radius: 0.5rem;
+	font-size: 17px;
+	font-weight: 500;
+	background: var(--main-color);
+	color: var(--text-color);
+	border: 1px solid var(--main-color);
+	transition: all .40s ease;
+}
+.btn:hover
+{
+	transform: scale(1.01) translateY(-5px);
+	background: transparent;
+	
+}
+
+header.sticky
+{
+	padding: 10px 16%;
+	background: var(--bg-color);
+	border-bottom: 1px solid #0e1630;
+}
+.about
+{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	gap: 2rem;
+}
+.about-text h4
+{
+	margin: 10px 0;
+	color: var(--main-color);
+	font-size: 20px;
+	font-weight: 600;
+}
+.about-text h2
+{
+	font-size: var(--h2-font);
+}
+.about-text p
+{
+	color: var(--second-color);
+	font-size: var(--p-font);
+	line-height: 30px;
+	margin-bottom: 2rem;
+}
+
+.about-gri
+{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+	align-items: center;
+	gap: 1rem;
+	margin-bottom: 3rem;
+}
+.about-in h5
+{
+	font-size: 22px;
+	font-weight: 600;
+}
+
+.about-img img
+{
+	height: auto;
+	width: 100%;
+	max-width: 460px;
+}
+
+.main-text
+{
+	text-align: center;
+}
+.main-text h2
+{
+	font-size: var(--h2-font);
+	margin-bottom: 10px;
+}
+.main-text h4
+{
+	color: var(--main-color);
+	font-size: 24px;
+	font-weight: 600;
+}
+.services-content
+{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+	align-items: center;
+	text-align: center;
+	gap: 2rem;
+	margin-top: 5rem;
+}
+.box
+{
+	padding: 45px;
+	background: #12141c;
+	border-top: 5px solid transparent;
+	border-radius: 0.5rem;
+	transition: all .40s ease;
+	cursor: pointer;
+}
+.box h3
+{
+	font-size: 24px;
+	font-weight: 600;
+	margin: 15px 0;
+	transition: all .40s ease;
+}
+.box p
+{
+	color: var(--second-color);
+	font-size: var(--p-font);
+	line-height: 30px;
+}
+.box:hover
+{
+	transform: scale(1.01) translateY(-5px);
+	border-top: 5px solid var(--main-color);
+}
+.box:hover h3
+{
+	color: var(--main-color);
+}
+
+.portfolio-content
+{
+	display: grid;
+justify-content: space-between;
+            align-items: center;
+	grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+	align-items: center;
+	gap: 2rem;
+	margin-top: 5rem;
+}
+.row img
+{
+	height: auto;
+	width: 100%;
+	border-radius: 0.5rem;
+	margin-bottom: 1.5rem;
+}
+.row
+{
+	padding: 25px;
+	background: #12141c;
+	border-radius: 0.5rem;
+	transition: all .40s ease;
+}
+.main-row
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 1rem;
+}
+.row h3
+{
+	font-size: 25px;
+	font-weight: 700;
+}
+.row h6
+{
+	color: var(--main-color);
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: 1px;
+}
+.row-icon i
+{
+	font-size: 21px;
+}
+.row:hover
+{
+	transform: scale(1.01) translateY(-5px);
+	cursor: pointer;
+}
+
+.contact
+{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	gap: 3rem;
+}
+.contact-text h4
+{
+	margin: 15px 0;
+	color: var(--main-color);
+	font-size: 20px;
+	font-weight: 600;
+}
+.contact-text h2
+{
+	font-size: var(--h2-font);
+}
+.contact-text p
+{
+	color: green;
+	font-size: var(--p-font);
+	line-height: 30px;
+	margin-bottom: 2rem;
+}
+.contact-list
+{
+	margin-bottom: 3rem;
+}
+.contact-list li
+{
+	margin-bottom: 10px;
+	display: block;
+}
+.contact-list li a
+{
+	display: block;
+	color: var(--second-color);
+	font-size: var(--p-font);
+	font-weight: 600;
+	transition: all .40s ease;
+}
+.contact-list li a:hover
+{
+	transform: scale(1.01) translateY(-5px);
+	color: var(--main-color);
+}
+.contact-icons i
+{
+	height: 40px;
+	width: 40px;
+	background: #0ef;
+	border-radius: 0.5rem;
+	color: var(--main-color);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+	margin-right: 10px;
+	transition: all .40s ease;
+}
+.contact-icons i:hover
+{
+	transform: scale(1.01) translateY(-5px);
+	color: var(--text-color);
+	background: var(--main-color);
+}
+
+.contact-form form
+{
+	position: relative;
+}
+.contact-form form input,form textarea
+{
+	border: none;
+	outline: none;
+	width: 100%;
+	padding: 18px;
+	background: #12141c;
+	color: var(--text-color);
+	font-size: 1rem;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+	border-radius: 0.5rem;
+}
+.contact-form textarea
+{
+	resize: none;
+	height: 220px;
+}
+.contact-form form .send
+{
+	display: inline-block;
+	font-size: 17px;
+	font-weight: 500;
+	background: var(--main-color);
+	color: var(--text-color);
+	width: 190px;
+	transition: all .40s ease;
+	cursor: pointer;
+} 
+
+.last-text p
+{
+	text-align: center;
+	padding: 15px;
+	color: var(--second-color);
+	font-size: 15px;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+.top
+{
+	position: fixed;
+	bottom: 2.1rem;
+	right: 2.1rem;
+}
+.top i
+{
+	color: var(--text-color);
+	background: var(--main-color);
+	font-size: 20px;
+	padding: 10px;
+	border-radius: 0.5rem;
+}
+
+@media (max-width: 1325px)
+{
+	header
+        {
+		padding: 16px 3%;
+	}
+	header.sticky
+        {
+		padding: 8px 3%;
+	}
+	section
+        {
+		padding: 130px 3% 60px;
+	}
+}
+
+@media (max-width: 970px)
+{
+	:root
+        {
+		--h1-font: 4.2rem;
+	--h2-font: 2.9rem;
+	--p-font: 1rem;
+	}
+	section
+        {
+		padding: 70px 3% 60px;
+	}
+	.home
+        {
+		height: 85vh;
+	}
+	.about
+        {
+		grid-template-columns: 1fr;
+	}
+	.about-img
+        {
+		text-align: center;
+	}
+	.contact
+        {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 830px)
+{
+	#menu-icon
+        {
+		display: block;
+	}
+	.navbar
+       {
+		position: absolute;
+		top: -600px;
+		right: 0;
+		left: 0;
+		display: flex;
+		flex-direction: column;
+		background: #12141c;
+		text-align: left;
+		text-decoration: none;
+		transition: all .40s ease;
+	}
+	.navbar a
+        {
+		display: block;
+		padding: 1rem;
+		margin: 1rem;
+		text-decoration: none;
+	}
+	.navbar.active
+        {
+		top: 100%;
+	}
+	:root
+        {
+		--h1-font: 3.7rem;
+	--h2-font: 2.7rem;
+	}
+}
+
+.back-video
+{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/10)
+{
+	.back-video
+        {
+		width: 110%;
+		height: auto;
+	}
+}
+@media (max-aspect-ratio: 16/10)
+{
+	.back-video
+        {
+		width: auto;
+		height: 100%;
+	}
+}
+
+img
+{
+	height:150px;
+	width: 150px;
+}
+
+.tech-skills h2
+{
+	font-size: var(--h2-font);
+	text-align: center;
+}
+
+.skills
+{
+	box-sizing: border-box;
+}
+
+.diff-skills::after 
+{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.skill-item
+{
+	float: left;
+	width: 14.28%;
+	height: 90%;
+	padding: 8px;
+} 
+
+@media (max-width:660px)
+{
+	.skill-item img
+        {
+		height:90%;
+		width:90%;
+	}
+	.tech-skills h2
+        {
+		font-size: var(--h2-font);
+	}
+}
+
+*{
+	padding: 0;
+	margin: 0;
+box-sizing: border-box; 
+font-family: 'Roboto', sans-serif;
+}
+
+.inner
+{
+	padding-top: 20px;
+}
+
+.Tech_header
+{
+	text-align: center;
+	color: #fff;
+	padding: 1rem;
+	position: relative;
+}
+
+.Tech_header::after
+{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 4px;
+	width: 100px;
+	background-color: #eb4a4a;
+	border-radius: 2px;
+}
+.navbar 
+{
+display:inline-block;
+padding:12px ;
+border-radius:100px;
+box-shadow: 0 0 10px #0ef;
+font-size: 16px;
+letter-spacing: 1px;
+font-weight: 600;
+text-decoration: none;
+opacity: 10;
+display: flex;
+animation: slideTop Is ease forwards;
+animation-delay: 2s;
+}
+h1 {
+            text-align: center;
+        }
+ 
+        /* Create a container using CSS properties */
+        .container {
+            top: 30%;
+            left: 50%;
+            position: absolute;
+            text-align: center;
+            transform: translate(-50%, -50%);
+        }
+ 
+        /* Apply CSS properties to ui-widgets class */
+        .ui-widgets {
+            position: relative;
+            display: inline-block;
+            width: 10rem;
+            height: 10rem;
+            border-radius: 9rem;
+            margin: 1.5rem;
+            border: 1.2rem solid palegreen;
+            box-shadow: inset 0 0 7px grey;
+            border-left-color: palegreen;
+            border-top-color: chartreuse;
+            border-right-color: darkgreen;
+            border-bottom-color: white;
+            text-align: center;
+            box-sizing: border-box;
+        }
+ 
+        /*  Apply css properties to the second 
+            child of ui-widgets class */
+        .ui-widgets:nth-child(2) {
+            border-top-color: chartreuse;
+            border-right-color: white;
+            border-left-color: palegreen;
+            border-bottom-color: white;
+        }
+ 
+        /*  Apply css properties to ui-widgets class 
+            and ui-values class*/
+        .ui-widgets .ui-values {
+            top: 40px;
+            position: absolute;
+            left: 10px;
+            right: 0;
+            font-weight: 700;
+            font-size: 2.0rem;
+ 
+        }
+         .ui-widgets .ui-labels {
+ 
+            left: 0;
+            bottom: -16px;
+            text-shadow: 0 0 4px grey;
+            color: black;
+            position: absolute;
+                       font-size: 16px;
+        }
+    
+.Tcontainer
+{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	grid-gap: 1rem;
+	padding: 1rem 80px;
+	font-size: 1.2rem;
+}
+
+.skill-box
+{
+	padding: 1rem;
+	color: #ddd;
+	cursor: pointer;
+}
+
+.skill-box:hover > .skill-title:after, .skill-box:hover > .skill-title:before
+{
+	width: 35px;
+}
+
+.skill-box:hover .tech_img
+{
+	transform: translateY(-10px);
+}
+
+.skill-title
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0.5rem;
+	margin-bottom: 0.5rem;
+	position: relative;
+}
+
+.skill-title:after
+{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 50%;
+	width: 0;
+	height: 4px;
+	border-radius: 2px 0 0 2px;
+	background-color: #eb4a4a;
+	transition: .5s;
+}
+
+.skill-title:before
+{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 4px;
+	border-radius: 0 2px 2px 0;
+	background-color: #eb4a4a;
+	transition: .5s;
+}
+
+.tech_img
+{
+	width: 90px;
+	height: 90px;
+	position: relative;
+	border-radius: 45px;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: .5s;
+}
+.click
+{
+display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Green */
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.click:hover
+{
+background-color: gray;
+}
+.click:active
+{
+background-color: #3e8e41;
+}
+
+.tech_img:after
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 90px;
+	background: rgba(100, 100, 100, 0.5);
+	border-radius: 45px 0 0 45px;
+}
+
+.skill-title h3
+{
+	color: #fff;
+	margin-top: 0.5rem;
+}
+
+.skill-icon
+{
+	width: 50px;
+	height: 50px;
+	z-index: 2;
+}
+
+@media screen and (max-width: 990px)
+{
+	.Tcontainer
+        {
+		grid-template-columns: repeat(2, 1fr);
+		padding: 2rem 50px;
+	}
+}
+	
+@media screen and (max-width: 650px)
+{
+	.Tcontainer
+        {
+		grid-template-columns: 1fr;
+	}
+
+}
+@keyframes slideInFromLeft {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    .about-img img {
+      animation: slideInFromLeft 1s ease-in-out;
+    }
+	.animate-img {
+  animation: slideInFromLeft 1s ease-in-out forwards;
+}
+a
+{
+	text-decoration: none;
+}
+body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .navbar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    .navbar li {
+        margin-right: 15px;
+    }
+
+    .navbar li:last-child {
+        margin-right: 0;
+    }
+	header{
+		width:100%;
+	}
+
+    .navbar a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    /* Media query for smaller screens */
+    @media screen and (max-width: 768px) {
+        .navbar {
+            display: none;
+            flex-direction: column;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .navbar li {
+            margin: 10px 0;
+        }
+
+        .navbar li:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Show/hide navigation when checkbox is checked */
+        #menu-toggle:checked + .navbar {
+            display: flex;
+        }
+    }
+
+    /* Hamburger menu icon */
+    #menu-toggle {
+        display: none;
+    }
+
+    #menu-toggle + label {
+        display: none;
+    }
+
+    @media screen and (max-width: 768px) {
+        #menu-toggle + label {
+            display: block;
+            cursor: pointer;
+            font-size: 20px;
+        }
+    }
+	
+
+</style>
+</head>
+<body>
+	<!---header--->
+	<header>
+		<h2 class="logo"><span>My</span> Portfo<span>lio</span></h2>
+		<input type="checkbox" id="menu-toggle">
+		<label for="menu-toggle" class="menu-icon">&#9776;</label>
+		<ul class="navbar">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About Me</a></li>
+			<li><a href="#experience">Experience</a></li>
+			<li><a href="#skills">Skills</a></li>
+			<li><a href="#achievement">Achievements</a></li>
+			<li><a href="#portfolio">Projects</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</header>
+
+	<!---home--->
+	<section class="home" id="home">
+		
+		<div class="back-video">
+			<video autoplay loop muted>
+				<source src="C:\Users\nisha\Downloads\y2mate.com - HiTech futuristic technology background video  Artificial Intelligence footages  User interphase_1080p.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+		</div>
+		<div class="home-text">
+			<h4>Hello</h4>
+			<h1>Am Nishant<br></h1>
+			<h3>Computer Science and Engineering Student </h3>
+			<a href="https://www.soa.ac.in" class="btn" target="_blank">My University</a>
+		</div>
+	</section>
+
+	<!---about--->
+	<section class="about" id="about">
+		<div class="about-img">
+			<img id="ni" src="C:\Users\nisha\Desktop\Bharat Intern\Nishant.jpg">
+		</div>
+
+		<div class="about-text">
+			<h2>About Me</h2>
+			<h4>Hi, My name is Nishant Sankar Swain</h4>
+			<p>I am a B.Tech Second Year(4th Semester) Student of Institute of Technical Education and Research(ITER) College, of Shiksha O Anusandhan(SOA) University . I have a keen Interest in Problems Solving and Finding new and Dynamic Ideas.</p><br>
+			<p>I am a Full Stack Java Devloper & Front-end Web Developer. Am completed some basics of some pogramming language mostly in JAVA Programming , HTML , JQuery , JavaScript , Bootstrap for designing Purpose and also complete the DBMS(Database Management System) MySQL etc..</p>
+			<div class="about-gri">
+				<div class="about-in">
+					<h5>1. Problem Solving</h5>
+				</div>
+
+				<div class="about-in">
+					<h5>2. DSA</h5>
+				</div>
+
+				<div class="about-in">
+					<h5>3. DBMS</h5>
+				</div>
+
+				<div class="about-in">
+					<h5>4. Web Development</h5>
+				</div>
+
+			</div>
+			<a href="C:\Users\nisha\Downloads\d8a423f2-0153-4aee-837a-41ec7c29dbd4.pdf" class="btn">Download My CV</a>
+		</div>
+	</section>
+
+	<!-- Technical Languages -->
+	<div class="inner">
+		<div class="Tech_header">
+			<h1>Languages</h1>
+		</div>
+		<div class="Tcontainer">
+			<div class="skill-box">
+				<div class="skill-title">
+					<div class="tech_img">
+						<img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png" alt="JAVA Programming">
+					</div>
+					<h3>JAVA</h3>
+				</div>
+			</div>
+			<div class="skill-box">
+				<div class="skill-title">
+					<div class="tech_img">
+						<img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/labs/8/8e/Mysql_logo.png" alt="MySQL(Database)">
+					</div>
+					<h3>MySQL</h3>
+				</div>
+			</div>
+			<div class="skill-box">
+				<div class="skill-title">
+					<div class="tech_img">
+						<img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" alt="Html">
+					</div>
+					<h3>HTML</h3>
+				</div>
+			</div>
+			<div class="skill-box">
+				<div class="skill-title">
+					<div class="tech_img">
+						<img class="skill-icon" src="https://e7.pngegg.com/pngimages/271/958/png-clipart-1st-century-logo-brand-electric-motor-jquery-icon-blue-text.png" alt="JQuery">
+					</div>
+					<h3>JQuery</h3>
+				</div>
+			</div>
+		<div class="skill-box">
+			<div class="skill-title">
+				<div class="tech_img">
+					<img class="skill-icon" src="https://w1.pngwing.com/pngs/851/405/png-transparent-react-logo-javascript-programming-language-scripting-language-javascript-framework-computer-programming-angularjs-nodejs.png" alt="JS">
+				</div>
+				<h3>JavaScript</h3>
+				</div>
+			</div>
+			<div class="skill-box">
+				<div class="skill-title">
+					<div class="tech_img">
+						<img class="skill-icon" src="https://static.javatpoint.com/bootstrappages/images/bootstrap-tutorial.png" alt="Bootstrap">
+					</div>
+					<h3>Bootstrap</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- -Experience- -->
+	<section class="experience" id="experience">
+		<div class="main-text">
+			<h2>My Experiences</h2>
+		</div>
+		<br>
+		<div class="experience-content">
+			<div class="box">
+				<img src="C:\Users\nisha\Desktop\Bharat Intern\CTMS.png">
+				<h3>Culture Troupe Management System(CTMS)</h3>
+				<h4>
+					<span>
+						Modifying and Designing the Website of Government of Odisha<br>
+                                                Add some extra features to it by using HTML,CSS,JQuery and JAVAScript & its looks so nice and dynamically designed.
+					</span>
+				</h4>
+				<br>
+				<p>
+					• Created Multiple Projects with their detailed Documentation.
+					<br>
+					• Worked with the Database Management System.<br>
+                                        • Also complete all the Task of Prodigy Infotech and get certified from this Company.<br>
+                                        • Recently am getting virtual internship from Codsoft and complete all the Task and get certified from this Company.<br>
+                                        • Am also work with some Research paper that topic is "Prediction of Road Accident" with our Instructor "Ayes Chinmay" Faculty of Computer Science Department of ITER , SOA University.<br> We are create a group and work together , my Groupmates are <br> 1.Nishant Sankar Swain<br>2.Manash Mohapatra<br>3.Hridesh Swain<br>
+                                        • Now am almost complete all the Task of Bharat Intern.
+<br>
+                                         <p>By clicking this button you can see my Website----->> <button class="click"><a href="https://nishantsankar.netlify.app/govt_odisha_ctms " style="text-decoration:none" target="_blank">Click Me</a></button>
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- -Skills- -->
+	<section class="skills" id="skills">
+		<div class="main-text">
+			<h2>My Skills</h2>
+		</div>
+
+		<div class="skills-content">
+			<div class="box">
+				<img src="https://1000logos.net/wp-content/uploads/2020/09/Java-Logo.png" >
+				<h3>JAVA Programming</h3>
+				<p>
+					Competitive programming is a sport of coding, where individuals engage in solving algorithmic challenges against the clock, showcasing their problem-solving skills and efficiency in crafting elegant and optimized solutions.</p>
+</div>
+			</div>
+
+			<div class="box">
+				<img src="https://miro.medium.com/v2/resize:fit:1400/1*s80xLYgbrwbXgEuuDBR5mw.jpeg" >
+				<h3>Front-end Development</h3>
+				<p>Front-end development is the art of bringing digital creativity to life, focusing on the user interface and user experience to seamlessly merge design with functionality, shaping the visual and interactive elements of websites.</p>
+		</div>
+</div>
+
+</div>
+			</div>
+			</div>
+
+			<div class="box">
+				<img src="https://www.thinknexttraining.com/images/data-structues-and-algorithms-mob.jpg">
+				<h3>Data Structure Algorithim</h3>
+				<p>Machine learning is a transformative field at the intersection of computer science and A.I., empowering systems to learn from data, recognize patterns, and make intelligent decisions, entering in a automated insights and problem-solving.</p>
+</div>
+			</div>
+			</div>
+
+ 
+	</section>
+
+	<!-- -Achievements- -->
+	<section class="achievement" id="achievement">
+		<div class="main-text">
+			<h2>My Achievements</h2>
+			<h4>Some of My Major Achievements</h4>
+		</div>
+
+		<div class="portfolio-content">
+			<div class="row">
+				<img src="D:\Download\codsofts.jpg">
+				<div class="main-row">
+					<div class="row-text">
+						<h6>I got a Certificate from CodSoft for Completed my All the Task in JAVA Programming</h6>
+					</div>
+				</div>
+				<h3>Details about the Achievement </h3>
+			</div>
+			<div class="row">
+				<img src="D:\Download\lor.jpg">
+				<div class="main-row">
+					<div class="row-text">
+						<h6>Recently in 21th February , 2024 am getting a Letter of Recommendation from Dr.Deven Chopra(Software Engineering Manager) of PRODIGY INFOTECH</h6>
+					</div>
+				</div>
+				<h3>Details about the Recommendation </h3>
+			</div>
+			<div class="row">
+				<img src="D:\Download\Prodigy.jpg">
+				<div class="main-row">
+					<div class="row-text">
+						<h6>Am Completed a 1 Month Internship in Web Devlopment with Prodigy InfoTech</h6>
+					</div>
+				</div>
+				<h3>Details about the Achievement </h3>
+			</div>
+			
+		</div>
+	</section>
+	
+
+	<!-- -portfolio- -->
+	<section class="portfolio" id="portfolio">
+		<div class="main-text">
+			<h2>My Projects</h2>
+			<h4>Some Of My Distinguished Works</h4>
+		</div>
+
+		<div class="portfolio-content">
+			<div class="row">
+				<a href="https://ctms-ollc.odisha.gov.in/" target="_blank">
+					<img src="C:\Users\nisha\Desktop\Bharat Intern\CTMS.png">
+				</a>
+					<div class="main-row">
+					<div class="row-text">
+						<h6>Web App development</h6>
+					</div>
+				</div>
+				<h3>Culture Troupe Management System</h3>
+			</div>
+
+			<div class="row">
+				<a href="https://www.geeksforgeeks.org/forecast-weather-project-check-today-weather-for-any-location/" target="_blank">
+					<img src="https://img.freepik.com/premium-vector/set-colorful-weather-widget-icons_38021-3.jpg">
+				</a>
+				<div class="main-row">
+					<div class="row-text">
+						<h6></h6>
+					</div>
+				</div>
+				<h3>Weather Forecasting App</h3>
+			</div>
+			
+			<div class="row">
+				<a href="https://www.geeksforgeeks.org/dog-breed-classification-using-transfer-learning/" target="_blank">
+					<img src="https://cdn.sanity.io/images/qyzm5ged/production/ecd7f1b7c5b7cb57e9d4225ab62fe09a37034535-2138x1196.jpg/Thumbnail-v1-(1).jpg">
+				</a>
+				<div class="main-row">
+					<div class="row-text">
+						<h6></h6><br><br>
+					</div>
+				</div>
+				<h3>Dynamic Calculator</h3>
+			</div>
+
+			<div class="row">
+				<a href="https://www.geeksforgeeks.org/ml-boston-housing-kaggle-challenge-with-linear-regression/" target="_blank">
+					<img src="https://www.picmicrolab.com/wp-content/uploads/2014/10/Digital-Stopwatch-Featured-Image.jpg">
+				</a>
+				<div class="main-row">
+					<div class="row-text">
+						<h6></h6>
+					</div>
+				</div>
+				<h3>Digital Stop Watch</h3>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- -POR- -->
+	<section class="POR" id="POR">
+		<div class="main-text">
+			<h2>Position of Responsibilities</h2>
+			<h4>Some of My valunteer Work</h4>
+		</div>
+
+		<div class="portfolio-content">
+			<div class="row">
+				<img src="D:\Download\ad class.jpg">
+					<div class="main-row">
+					<div class="row-text">
+						
+					</div><br>
+				</div><br>
+				<h3>Class Representative ( CR ) of ( Section - 21 )</h3>
+			</div>
+
+			<div class="row">
+				<img src="C:\Users\nisha\Desktop\Bharat Intern\Sri Guru Banner(Trust).jpg" height="600">
+				<div class="main-row">
+					<div class="row-text">
+					</div>
+				</div>
+				<h3>Vice-President of Sri Guru Cultural Group Trust</h3>
+			</div>
+		</div>
+	</section>
+
+	<!-- -contact- -->
+	<section class="contact" id="contact">
+		<div class="contact-text">
+			<h2>Contact Me</h2>
+			<h4>Let's Work Together</h4>
+			<p>I will Help you in your next Project, Contact me through details given below .</p>
+			<div class="contact-list">
+				<li><a href="https://www.google.com/maps/place/Ouat+Colony,+Soubhagya+Nagar,+Bhubaneswar,+Odisha+751008/@20.2739871,85.8060796,17z/data=!4m6!3m5!1s0x3a19a778b967b913:0x381eeaacc109a8a7!8m2!3d20.2734185!4d85.8088349!16s%2Fg%2F11g81fj4ln?entry=ttu">Local Address</a></li>
+				<li><a href="#">nishant.sankar2003@gmail.com</a></li>
+				<li><a href="#">+91 7978304877</a></li>
+				<a href="mailto: example@gmail.com">
+					<button class="btn">
+						Let's Chat
+					</button>
+				</a>
+			</div>
+			<div class="contact-icons">
+				<a href="https://www.geeksforgeeks.org/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+				<a href="https://www.geeksforgeeks.org/" target="_blank"><i class='bx bxl-instagram' ></i></a>
+				<a href="https://www.geeksforgeeks.org/" target="_blank"><i class='bx bxl-github' ></i></a>
+				<a title="+91 7978304877"><i class='bx bxl-whatsapp' ></i></a>
+
+			</div>
+		</div> 
+	</section>
+	<!---scroll-top--->
+	<a href="#" class="top"><i class='bx bx-up-arrow-alt' ></i></a>
+
+	<script src="https://unpkg.com/scrollreveal"></script>
+
+	<!---custom js link--->
+	<script>
+const header = document.querySelector("header");
+
+window.addEventListener ("scroll", function() {
+	header.classList.toggle ("sticky", window.scrollY >0);
+});
+
+let menu = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+menu.onclick = () => {
+	menu.classList.toggle('bx-x');
+	navbar.classList.toggle('active');
+};
+
+window.onscroll = () => {
+	menu.classList.remove('bx-x');
+	navbar.classList.remove('active');
+};
+
+const sr = ScrollReveal ({
+	distance: '25px',
+	duration: 250,
+	reset: true
+})
+
+sr.reveal('.home-text',{delay:190, origin:'bottom'})
+
+sr.reveal('.about,.services,.portfolio,.contact',{delay:200, origin:'bottom'})
+</script>
+
+</body>
+</html>

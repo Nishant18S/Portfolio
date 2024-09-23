@@ -1,0 +1,1560 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="https://scontent.fccu4-3.fna.fbcdn.net/v/t39.30808-6/450318490_1039403251228436_7656126567700819169_n.jpg?stp=dst-jpg_s640x640&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=sTr_hKxinX8Q7kNvgGiatep&_nc_ht=scontent.fccu4-3.fna&oh=00_AYDNInvcao-uZxlCrC68zwJIg1_-GoAtrL8iUdLWh0vd8g&oe=6694444A">
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+	<title>Nishant Portfolio</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css
+/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+	 	<script	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.
+js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js">
+</script>
+<script>
+$(document).ready(function(){
+$("#A").onclick(function(){
+$(".container").hide();
+});
+});
+</script>
+	<!---custom css link--->
+	<link rel="stylesheet" type="text/css" href="css/style1.css">
+
+	<link rel="stylesheet"
+href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Lato:wght@300&family=Poppins&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+<style>
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif;
+	list-style: none;
+	text-decoration: none;
+	scroll-behavior: smooth;
+}
+
+:root{
+	--bg-color: #020312;
+	--text-color:pink;
+	--main-color: #eb4a4a;
+	--second-color: gray;
+	--other-color: #12141c;
+	--h1-font: 5.2rem;
+	--h2-font: 3.5rem;
+	--p-font: 1.1rem;
+}
+body
+{
+	background: var(--bg-color);
+	color: var(--text-color);
+}
+header
+{
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: transparent;
+	padding: 22px 16%;
+	border-bottom: 1px solid transparent;
+	transition: all .40s ease;
+}
+.navbar
+{
+	display: flex;
+}
+.navbar a
+{
+	color: #0ef;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 20px ;
+	margin: auto;
+	
+	transition: all .40s ease;
+}
+.navbar a:hover
+{
+	
+	color: gold;
+}
+#menu-icon
+{
+	font-size: 36px;
+	color: var(--text-color);
+	z-index: 10001;
+	cursor: pointer;
+	display: none;
+}
+
+section
+{
+	padding: 160px 16% 90px;
+}
+.home
+{
+	height: 100vh;
+	width: 100%;
+	position: relative; 
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.home-text h1{
+	margin: 15px 0;
+	font-size: var(--h1-font);
+	font-weight: bold;
+	line-height: 1.1;
+	letter-spacing: 2px;
+}
+span
+{
+	color: GOLD;
+}
+.home-text h4
+{
+	color: var(--main-color);
+	font-size: 24px;
+	font-weight: 600;
+}
+.home-text h3
+{
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom: 3rem;
+}
+.btn
+{
+	display: inline-block;
+	padding: 14px 40px;
+	border-radius: 0.5rem;
+	font-size: 17px;
+	font-weight: 500;
+	background: var(--main-color);
+	color: var(--text-color);
+	border: 1px solid var(--main-color);
+	transition: all .40s ease;
+}
+.btn:hover
+{
+	transform: scale(1.01) translateY(-5px);
+	background: transparent;
+	
+}
+
+header.sticky
+{
+	padding: 10px 16%;
+	background: var(--bg-color);
+	border-bottom: 1px solid #0e1630;
+}
+.about
+{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	gap: 2rem;
+}
+.about-text h4
+{
+	margin: 10px 0;
+	color: var(--main-color);
+	font-size: 20px;
+	font-weight: 600;
+}
+.about-text h2
+{
+	font-size: var(--h2-font);
+}
+.about-text p
+{
+	color: var(--second-color);
+	font-size: var(--p-font);
+	line-height: 30px;
+	margin-bottom: 2rem;
+}
+
+.about-gri
+{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+	align-items: center;
+	gap: 1rem;
+	margin-bottom: 3rem;
+}
+.about-in h5
+{
+	font-size: 22px;
+	font-weight: 600;
+}
+
+.about-img img
+{
+	height: auto;
+	width: 100%;
+	max-width: 460px;
+}
+
+.main-text
+{
+	text-align: center;
+}
+.main-text h2
+{
+	font-size: var(--h2-font);
+	margin-bottom: 10px;
+}
+.main-text h4
+{
+	color: var(--main-color);
+	font-size: 24px;
+	font-weight: 600;
+}
+.services-content
+{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+	align-items: center;
+	text-align: center;
+	gap: 2rem;
+	margin-top: 5rem;
+}
+.box
+{
+	padding: 45px;
+	background: #12141c;
+	border-top: 5px solid transparent;
+	border-radius: 0.5rem;
+	transition: all .40s ease;
+	cursor: pointer;
+}
+.box h3
+{
+	font-size: 24px;
+	font-weight: 600;
+	margin: 15px 0;
+	transition: all .40s ease;
+}
+.box p
+{
+	color: var(--second-color);
+	font-size: var(--p-font);
+	line-height: 30px;
+}
+.box:hover
+{
+	transform: scale(1.01) translateY(-5px);
+	border-top: 5px solid var(--main-color);
+}
+.box:hover h3
+{
+	color: var(--main-color);
+}
+
+.portfolio-content
+{
+	display: grid;
+justify-content: space-between;
+            align-items: center;
+	grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+	align-items: center;
+	gap: 2rem;
+	margin-top: 5rem;
+}
+.row img
+{
+	height: auto;
+	width: 100%;
+	border-radius: 0.5rem;
+	margin-bottom: 1.5rem;
+}
+.row
+{
+	padding: 25px;
+	background: #12141c;
+	border-radius: 0.5rem;
+	transition: all .40s ease;
+}
+.main-row
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 1rem;
+}
+.row h3
+{
+	font-size: 25px;
+	font-weight: 700;
+}
+.row h6
+{
+	color: var(--main-color);
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: 1px;
+}
+.row-icon i
+{
+	font-size: 21px;
+}
+.row:hover
+{
+	transform: scale(1.01) translateY(-5px);
+	cursor: pointer;
+}
+
+.contact
+{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	gap: 3rem;
+}
+.contact-text h4
+{
+	margin: 15px 0;
+	color: var(--main-color);
+	font-size: 20px;
+	font-weight: 600;
+}
+.contact-text h2
+{
+	font-size: var(--h2-font);
+}
+.contact-text p
+{
+	color: green;
+	font-size: var(--p-font);
+	line-height: 30px;
+	margin-bottom: 2rem;
+}
+.contact-list
+{
+	margin-bottom: 3rem;
+}
+.contact-list li
+{
+	margin-bottom: 10px;
+	display: block;
+}
+.contact-list li a
+{
+	display: block;
+	color: var(--second-color);
+	font-size: var(--p-font);
+	font-weight: 600;
+	transition: all .40s ease;
+}
+.contact-list li a:hover
+{
+	transform: scale(1.01) translateY(-5px);
+	color: var(--main-color);
+}
+.contact-icons i
+{
+	height: 40px;
+	width: 40px;
+	background: #0ef;
+	border-radius: 0.5rem;
+	color: var(--main-color);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+	margin-right: 10px;
+	transition: all .40s ease;
+}
+.contact-icons i:hover
+{
+	transform: scale(1.01) translateY(-5px);
+	color: var(--text-color);
+	background: var(--main-color);
+}
+
+.contact-form form
+{
+	position: relative;
+}
+.contact-form form input,form textarea
+{
+	border: none;
+	outline: none;
+	width: 100%;
+	padding: 18px;
+	background: #12141c;
+	color: var(--text-color);
+	font-size: 1rem;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+	border-radius: 0.5rem;
+}
+.contact-form textarea
+{
+	resize: none;
+	height: 220px;
+}
+.contact-form form .send
+{
+	display: inline-block;
+	font-size: 17px;
+	font-weight: 500;
+	background: var(--main-color);
+	color: var(--text-color);
+	width: 190px;
+	transition: all .40s ease;
+	cursor: pointer;
+} 
+
+.last-text p
+{
+	text-align: center;
+	padding: 15px;
+	color: var(--second-color);
+	font-size: 15px;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+.top
+{
+	position: fixed;
+	bottom: 2.1rem;
+	right: 2.1rem;
+}
+.top i
+{
+	color: var(--text-color);
+	background: var(--main-color);
+	font-size: 20px;
+	padding: 10px;
+	border-radius: 0.5rem;
+}
+
+@media (max-width: 1325px)
+{
+	header
+        {
+		padding: 16px 3%;
+	}
+	header.sticky
+        {
+		padding: 8px 3%;
+	}
+	section
+        {
+		padding: 130px 3% 60px;
+	}
+}
+
+@media (max-width: 970px)
+{
+	:root
+        {
+		--h1-font: 4.2rem;
+	--h2-font: 2.9rem;
+	--p-font: 1rem;
+	}
+	section
+        {
+		padding: 70px 3% 60px;
+	}
+	.home
+        {
+		height: 85vh;
+	}
+	.about
+        {
+		grid-template-columns: 1fr;
+	}
+	.about-img
+        {
+		text-align: center;
+	}
+	.contact
+        {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 830px)
+{
+	#menu-icon
+        {
+		display: block;
+	}
+	.navbar
+       {
+		position: absolute;
+		top: -600px;
+		right: 0;
+		left: 0;
+		display: flex;
+		flex-direction: column;
+		background: #12141c;
+		text-align: left;
+		text-decoration: none;
+		transition: all .40s ease;
+	}
+	.navbar a
+        {
+		display: block;
+		padding: 1rem;
+		margin: 1rem;
+		text-decoration: none;
+	}
+	.navbar.active
+        {
+		top: 100%;
+	}
+	:root
+        {
+		--h1-font: 3.7rem;
+	--h2-font: 2.7rem;
+	}
+}
+
+.back-video
+{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/10)
+{
+	.back-video
+        {
+		width: 110%;
+		height: auto;
+	}
+}
+@media (max-aspect-ratio: 16/10)
+{
+	.back-video
+        {
+		width: auto;
+		height: 100%;
+	}
+}
+
+img
+{
+	height:150px;
+	width: 150px;
+}
+
+.tech-skills h2
+{
+	font-size: var(--h2-font);
+	text-align: center;
+}
+
+.skills
+{
+	box-sizing: border-box;
+}
+
+.diff-skills::after 
+{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.skill-item
+{
+	float: left;
+	width: 14.28%;
+	height: 90%;
+	padding: 8px;
+} 
+
+@media (max-width:660px)
+{
+	.skill-item img
+        {
+		height:90%;
+		width:90%;
+	}
+	.tech-skills h2
+        {
+		font-size: var(--h2-font);
+	}
+}
+
+*{
+	padding: 0;
+	margin: 0;
+box-sizing: border-box; 
+font-family: 'Roboto', sans-serif;
+}
+
+.inner
+{
+	padding-top: 20px;
+}
+
+.Tech_header
+{
+	text-align: center;
+	color: #fff;
+	padding: 1rem;
+	position: relative;
+}
+
+.Tech_header::after
+{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 4px;
+	width: 100px;
+	background-color: #eb4a4a;
+	border-radius: 2px;
+}
+.navbar 
+{
+display:inline-block;
+padding:12px ;
+border-radius:100px;
+box-shadow: 0 0 10px #0ef;
+font-size: 16px;
+letter-spacing: 1px;
+font-weight: 600;
+text-decoration: none;
+opacity: 10;
+display: flex;
+animation: slideTop Is ease forwards;
+animation-delay: 2s;
+}
+h1 {
+            text-align: center;
+        }
+ 
+        /* Create a container using CSS properties */
+        .container {
+            top: 30%;
+            left: 50%;
+            position: absolute;
+            text-align: center;
+            transform: translate(-50%, -50%);
+        }
+ 
+        /* Apply CSS properties to ui-widgets class */
+        .ui-widgets {
+            position: relative;
+            display: inline-block;
+            width: 10rem;
+            height: 10rem;
+            border-radius: 9rem;
+            margin: 1.5rem;
+            border: 1.2rem solid palegreen;
+            box-shadow: inset 0 0 7px grey;
+            border-left-color: palegreen;
+            border-top-color: chartreuse;
+            border-right-color: darkgreen;
+            border-bottom-color: white;
+            text-align: center;
+            box-sizing: border-box;
+        }
+ 
+        /*  Apply css properties to the second 
+            child of ui-widgets class */
+        .ui-widgets:nth-child(2) {
+            border-top-color: chartreuse;
+            border-right-color: white;
+            border-left-color: palegreen;
+            border-bottom-color: white;
+        }
+ 
+        /*  Apply css properties to ui-widgets class 
+            and ui-values class*/
+        .ui-widgets .ui-values {
+            top: 40px;
+            position: absolute;
+            left: 10px;
+            right: 0;
+            font-weight: 700;
+            font-size: 2.0rem;
+ 
+        }
+         .ui-widgets .ui-labels {
+ 
+            left: 0;
+            bottom: -16px;
+            text-shadow: 0 0 4px grey;
+            color: black;
+            position: absolute;
+                       font-size: 16px;
+        }
+    
+.Tcontainer
+{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	grid-gap: 1rem;
+	padding: 1rem 80px;
+	font-size: 1.2rem;
+}
+
+.skill-box
+{
+	padding: 1rem;
+	color: #ddd;
+	cursor: pointer;
+}
+
+.skill-box:hover > .skill-title:after, .skill-box:hover > .skill-title:before
+{
+	width: 35px;
+}
+
+.skill-box:hover .tech_img
+{
+	transform: translateY(-10px);
+}
+
+.skill-title
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0.5rem;
+	margin-bottom: 0.5rem;
+	position: relative;
+}
+
+.skill-title:after
+{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 50%;
+	width: 0;
+	height: 4px;
+	border-radius: 2px 0 0 2px;
+	background-color: #eb4a4a;
+	transition: .5s;
+}
+
+.skill-title:before
+{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 4px;
+	border-radius: 0 2px 2px 0;
+	background-color: #eb4a4a;
+	transition: .5s;
+}
+
+.tech_img
+{
+	width: 90px;
+	height: 90px;
+	position: relative;
+	border-radius: 45px;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: .5s;
+}
+.click
+{
+display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Green */
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.click:hover
+{
+background-color: gray;
+}
+.click:active
+{
+background-color: #3e8e41;
+}
+
+.tech_img:after
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 90px;
+	background: rgba(100, 100, 100, 0.5);
+	border-radius: 45px 0 0 45px;
+}
+
+.skill-title h3
+{
+	color: #fff;
+	margin-top: 0.5rem;
+}
+
+.skill-icon
+{
+	width: 50px;
+	height: 50px;
+	z-index: 2;
+}
+
+@media screen and (max-width: 990px)
+{
+	.Tcontainer
+        {
+		grid-template-columns: repeat(2, 1fr);
+		padding: 2rem 50px;
+	}
+}
+	
+@media screen and (max-width: 650px)
+{
+	.Tcontainer
+        {
+		grid-template-columns: 1fr;
+	}
+
+}
+@keyframes slideInFromLeft {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    .about-img img {
+      animation: slideInFromLeft 1s ease-in-out;
+    }
+	.animate-img {
+  animation: slideInFromLeft 1s ease-in-out forwards;
+}
+a
+{
+	text-decoration: none;
+}
+body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .navbar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    .navbar li {
+        margin-right: 15px;
+    }
+
+    .navbar li:last-child {
+        margin-right: 0;
+    }
+	header{
+		width:100%;
+	}
+
+    .navbar a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    /* Media query for smaller screens */
+    @media screen and (max-width: 768px) {
+        .navbar {
+            display: none;
+            flex-direction: column;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .navbar li {
+            margin: 10px 0;
+        }
+
+        .navbar li:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Show/hide navigation when checkbox is checked */
+        #menu-toggle:checked + .navbar {
+            display: flex;
+        }
+    }
+	.hero-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.typed {
+  font-weight: bold;
+  color: #333;
+}
+
+.typed::after {
+  content: "|";
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+    /* Hamburger menu icon */
+    #menu-toggle {
+        display: none;
+    }
+
+    #menu-toggle + label {
+        display: none;
+    }
+
+    @media screen and (max-width: 768px) {
+        #menu-toggle + label {
+            display: block;
+            cursor: pointer;
+            font-size: 20px;
+        }
+    }
+	h3
+	{
+		color:blue;
+	}
+	:root {
+  --bg-color: #ffffff; /* Default background color (white mode) */
+  --text-color: #000000; /* Default text color (black in white mode) */
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.symbol {
+  margin-right: 10px;
+}
+
+main {
+  padding: 20px;
+}
+
+.dark-mode {
+  --bg-color: #1a1a1a; /* Dark mode background color */
+  --text-color: #ffffff; /* Dark mode text color */
+}
+
+#dark-symbol {
+  display: none; /* Initially hide the moon symbol */
+}
+
+.dark-mode #dark-symbol {
+  display: inline; /* Show the moon symbol in dark mode */
+}
+
+.dark-mode #white-symbol {
+  display: none; /* Hide the sun symbol in dark mode */
+}
+
+
+
+
+</style>
+</head>
+<body>
+	<!---header--->
+	<header>
+		<h2 class="logo"><span>My</span> Portfo<span>lio</span></h2>
+		<input type="checkbox" id="menu-toggle">
+		<label for="menu-toggle" class="menu-icon">&#9776;</label>
+		<ul class="navbar">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About Me</a></li>
+			<li><a href="#experience">Experience</a></li>
+			<li><a href="#skills">Skills</a></li>
+			<li><a href="#achievement">Achievements</a></li>
+			<li><a href="#portfolio">Projects</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+		<button id="mode-toggle" aria-label="Toggle Dark Mode">
+			<span class="symbol" id="dark-symbol">&#127769;</span> <!-- Unicode symbol for moon -->
+			<span class="symbol" id="white-symbol">&#9728;</span> <!-- Unicode symbol for sun -->
+		  </button>
+	</header>
+	
+
+	<!---home--->
+	<section class="home" id="home">
+		
+		<div class="back-video">
+			<video autoplay loop muted width="100%">
+				<source src="https://videos.pexels.com/video-files/19419586/19419586-hd_1920_1080_30fps.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+		</div>
+<div class="home-text">
+	<div class="hero-container" data-aos="fade-in">
+		<h1 style="color:rgb(30, 255, 0)">Nishant Sankar Swain</h1>
+		<p><span class="typed"></span></p>
+	  </div>
+			<h3 style="color: powderblue;">Computer Science and Engineering Student</h3>
+			<a href="https://www.soa.ac.in" class="btn" target="_blank">My University</a>
+		</div>
+	</section>
+	<script>
+		const typedSpan = document.querySelector('.typed');
+const typedItems = ['Computer Science Student', 'Software Developer', 'Researcher', 'Animal Lover', 'Mathematics/Physics Teacher','Photographer', 'Freelancer'];
+let currentIndex = 0;
+let currentText = '';
+
+function type() {
+  const currentItem = typedItems[currentIndex];
+  if (currentText.length < currentItem.length) {
+    currentText += currentItem[currentText.length % currentItem.length];
+    typedSpan.textContent = `I'm ${currentText}`;
+    typedSpan.style.color = getRandomColor(); // set random color
+    setTimeout(type, 100);
+  } else {
+    typedSpan.textContent = `I'm ${currentItem}`;
+    typedSpan.style.color = getRandomColor(); // set random color
+    currentIndex = (currentIndex + 1) % typedItems.length; // move to next item
+    currentText = ''; // reset currentText
+    setTimeout(type, 2000); // wait 2 seconds before typing next item
+  }
+}
+
+function getRandomColor() {
+  const colors = ['#ff69b4', '#33cc33', '#6666ff', '#ffcc00', '#0099ff'];
+  return colors[Math.floor(Math.random() * colors.length)];
+}
+
+type();
+	  </script>
+
+	  <script> const toggleButton = document.getElementById('mode-toggle');
+		const body = document.body;
+		
+		toggleButton.addEventListener('click', function() {
+		  body.classList.toggle('dark-mode');
+		});
+		</script>
+		
+
+	<!---about--->
+	<section class="about" id="about">
+		<div class="about-img">
+			<img id="ni" src="https://scontent.fccu4-3.fna.fbcdn.net/v/t39.30808-6/450318490_1039403251228436_7656126567700819169_n.jpg?stp=dst-jpg_s640x640&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=sTr_hKxinX8Q7kNvgGiatep&_nc_ht=scontent.fccu4-3.fna&oh=00_AYDNInvcao-uZxlCrC68zwJIg1_-GoAtrL8iUdLWh0vd8g&oe=6694444A">
+		</div>
+
+		<div class="about-text">
+			<h2>About Me</h2>
+			<h4>Hi, My name is Nishant Sankar Swain</h4>
+			<p>I am a B.Tech Second Year(4th Semester) Student of Institute of Technical Education and Research(ITER) College, of Shiksha O Anusandhan(SOA) University . I have a keen Interest in Problems Solving and Finding new and Dynamic Ideas.</p><br>
+			<p>I am a Full Stack Java Devloper & Front-end Web Developer. Am completed some basics of some pogramming language mostly in JAVA Programming , HTML , JQuery , JavaScript , Bootstrap for designing Purpose and also complete the DBMS(Database Management System) MySQL etc..</p>
+			<div class="about-gri">
+				<div class="about-in">
+					<h5>1. Problem Solving</h5>
+				</div>
+
+				<div class="about-in">
+					<h5>2. DSA</h5>
+				</div>
+
+				<div class="about-in">
+					<h5>3. DBMS</h5>
+				</div>
+
+				<div class="about-in">
+					<h5>4. Web Development</h5>
+				</div>
+				<div class="about-in">
+					<h5>5. Full Stack Web Devloper</h5>
+				</div>
+
+			</div>
+			<a href="https://scontent.fccu4-2.fna.fbcdn.net/v/t39.30808-6/450605229_1039385871230174_8765244996815437060_n.jpg?stp=dst-jpg_p526x296&_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=vXDYT_xlDq4Q7kNvgFLn1mE&_nc_ht=scontent.fccu4-2.fna&oh=00_AYAgcy5tA7xhzN4zslbZM2pgtfjD2mTB47HB_cRDv_aRzQ&oe=669428EC"target="_blank" class="btn">See My CV</a>
+		</div>
+	</section>
+
+	<!-- Technical Languages -->
+	<div class="inner">
+		<div class="Tech_header">
+			<h1>Languages</h1>
+		</div>
+		<div class="Tcontainer">
+			<div class="skill-box">
+				<div class="skill-title">
+					<div class="tech_img">
+						<img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png" alt="JAVA Programming">
+					</div>
+					<h3>JAVA</h3>
+				</div>
+			</div>
+			<div class="skill-box">
+				<div class="skill-title">
+					<div class="tech_img">
+						<img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/labs/8/8e/Mysql_logo.png" alt="MySQL(Database)">
+					</div>
+					<h3>MySQL</h3>
+				</div>
+			</div>
+			<div class="skill-box">
+				<div class="skill-title">
+					<div class="tech_img">
+						<img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" alt="Html">
+					</div>
+					<h3>HTML</h3>
+				</div>
+			</div>
+			<div class="skill-box">
+				<div class="skill-title">
+					<div class="tech_img">
+						<img class="skill-icon" src="https://e7.pngegg.com/pngimages/271/958/png-clipart-1st-century-logo-brand-electric-motor-jquery-icon-blue-text.png" alt="JQuery">
+					</div>
+					<h3>JQuery</h3>
+				</div>
+			</div>
+		<div class="skill-box">
+			<div class="skill-title">
+				<div class="tech_img">
+					<img class="skill-icon" src="https://w1.pngwing.com/pngs/851/405/png-transparent-react-logo-javascript-programming-language-scripting-language-javascript-framework-computer-programming-angularjs-nodejs.png" alt="JS">
+				</div>
+				<h3>JavaScript</h3>
+				</div>
+			</div>
+			<div class="skill-box">
+				<div class="skill-title">
+					<div class="tech_img">
+						<img class="skill-icon" src="https://media.licdn.com/dms/image/D5612AQEHGZUx2evvxg/article-cover_image-shrink_600_2000/0/1688275415052?e=2147483647&v=beta&t=MiibYoaOd8k3EYKJGp_zBmSoyV_tklwOItiTYILUXKI" alt="Html">
+					</div>
+					<h3>C</h3>
+				</div>
+			</div>
+			<div class="skill-box">
+				<div class="skill-title">
+					<div class="tech_img">
+						<img class="skill-icon" src="https://static.javatpoint.com/bootstrappages/images/bootstrap-tutorial.png" alt="Bootstrap">
+					</div>
+					<h3>Bootstrap</h3>
+				</div>
+			</div>
+			<div class="skill-box">
+				<div class="skill-title">
+					<div class="tech_img">
+						<img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/800px-ISO_C%2B%2B_Logo.svg.png" alt="Html">
+					</div>
+					<h3>C++</h3>
+				</div>
+			</div>
+			<div class="skill-box">
+				<div class="skill-title">
+					<div class="tech_img">
+						<img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png" alt="Html">
+					</div>
+					<h3>Python</h3>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	
+	<!-- -Experience- -->
+	<section class="experience" id="experience">
+		<div class="main-text">
+			<h2>My Experiences</h2>
+		</div>
+		<br>
+		<div class="experience-content">
+			<div class="box">
+				<img src="https://scontent.fccu4-3.fna.fbcdn.net/v/t39.30808-6/450258148_1039380544564040_96710598588394919_n.jpg?stp=dst-jpg_p180x540&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=nIwo45YRovMQ7kNvgEqoc6P&_nc_ht=scontent.fccu4-3.fna&oh=00_AYAgjMnfX_G1z3zbPlDFg0_F33z2y4F68fztxiJebhbMyA&oe=66943A61">
+				<h3>Culture Troupe Management System(CTMS)</h3>
+				<h4>
+					<span>
+						Modifying and Designing the Website of Government of Odisha<br>
+                                                Add some extra features to it by using HTML,CSS,JQuery and JAVAScript & its looks so nice and dynamically designed.
+					</span>
+				</h4>
+				<br>
+				<p>
+					• Created Multiple Projects with their detailed Documentation.
+					<br>
+					• Worked with the Database Management System.<br>
+                                        • Also complete all the Task of Prodigy Infotech and get certified from this Company.<br>
+                                        • Recently am getting virtual internship from Codsoft and complete all the Task and get certified from this Company.<br>
+                                        • Am also work with some Research paper that topic is "Prediction of Road Accident" with our Instructor "Ayes Chinmay" Faculty of Computer Science Department of ITER , SOA University.<br> We are create a group and work together , my Groupmates are <br> 1.Nishant Sankar Swain<br>2.Manash Mohapatra<br>3.Hridesh Swain<br>
+                                        • Now am almost complete all the Task of Bharat Intern.
+<br>
+                                         <p>By clicking this button you can see my Website----->> <button class="click"><a href="https://nishantsankar.netlify.app/govt_odisha_ctms " style="text-decoration:none" target="_blank">Click Me</a></button>
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- -Skills- -->
+	<section class="skills" id="skills">
+		<div class="main-text">
+			<h2>My Skills</h2>
+		</div>
+
+		<div class="skills-content">
+			<div class="box">
+				<img src="https://1000logos.net/wp-content/uploads/2020/09/Java-Logo.png" >
+				<h3>JAVA Programming</h3>
+				<p>
+					Competitive programming is a sport of coding, where individuals engage in solving algorithmic challenges against the clock, showcasing their problem-solving skills and efficiency in crafting elegant and optimized solutions.</p>
+</div>
+			</div>
+
+			<div class="box">
+				<img src="https://miro.medium.com/v2/resize:fit:1400/1*s80xLYgbrwbXgEuuDBR5mw.jpeg" >
+				<h3>Front-end Development</h3>
+				<p>Front-end development is the art of bringing digital creativity to life, focusing on the user interface and user experience to seamlessly merge design with functionality, shaping the visual and interactive elements of websites.</p>
+		</div>
+</div>
+
+</div>
+			</div>
+			</div>
+
+			<div class="box">
+				<img src="https://www.thinknexttraining.com/images/data-structues-and-algorithms-mob.jpg">
+				<h3>Data Structure Algorithim</h3>
+				<p>Machine learning is a transformative field at the intersection of computer science and A.I., empowering systems to learn from data, recognize patterns, and make intelligent decisions, entering in a automated insights and problem-solving.</p>
+</div>
+			</div>
+			</div>
+
+ 
+	</section>
+
+	<!-- -Achievements- -->
+	<section class="achievement" id="achievement">
+		<div class="main-text">
+			<h2>My Achievements</h2>
+			<h4>Some of My Major Achievements</h4>
+		</div>
+
+		<div class="portfolio-content">
+			<div class="row">
+				<img src="https://scontent.fccu4-3.fna.fbcdn.net/v/t39.30808-6/449943541_1039404604561634_8419057577080749917_n.jpg?stp=dst-jpg_p180x540&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=oyC-PePazy0Q7kNvgFzaC1a&_nc_ht=scontent.fccu4-3.fna&oh=00_AYDeuI4AWN4z8KqvTdnmqNvX7NFGlsyHYfeqb8Aa9ufEOA&oe=66941783">
+				<div class="main-row">
+					<div class="row-text">
+						<h6>I am certified in completing the basics of JAVA Programming from HackerRank</h6>
+					</div>
+				</div>
+				<h3>HackerRank </h3>
+			</div>
+			<div class="row">
+				<img src="https://media.licdn.com/dms/image/D5622AQHepTC1vpR93A/feedshare-shrink_800/0/1708718137112?e=1723680000&v=beta&t=7MyWpzgIB1pUu8MYSYXktxEywV1Fa5T3V8EzPtU_zJo">
+				<div class="main-row">
+					<div class="row-text">
+						<h6>I received a certificate from CodSoft for completing all the tasks in JAVA Programming</h6>
+					</div>
+				</div>
+				<h3>CODSOFT </h3>
+			</div>
+			
+			<div class="row">
+				<img src="https://media.licdn.com/dms/image/D5622AQEYd5DRWtrprg/feedshare-shrink_800/0/1708709237866?e=1723680000&v=beta&t=Z1NwXh3hdCA2mFW6ZU__Aggz2qmpp14X9Il06LHvXjg">
+				<div class="main-row">
+					<div class="row-text">
+						<h6>I completed a one-month internship in web development with Prodigy InfoTech</h6>
+					</div>
+				</div>
+				<h3>Prodigy Infotech </h3>
+			</div>
+			<div class="row">
+				<img src="https://media.licdn.com/dms/image/D5622AQEGoChCwtuhRg/feedshare-shrink_800/0/1711045324179?e=1723680000&v=beta&t=BagRKB5GaBr8G_KB01AhzS3TSou4ZCsol8cYnqkjhiE">
+				<div class="main-row">
+					<div class="row-text">
+						<h6>I received a participation certificate for attending the 15th SOAFAL-3 (65th Lecture of SOAFAL) oration held on October 14, 2023, from Shiksha 'O' Anusandhan University, Bhubaneswar.</h6>
+					</div>
+				</div>
+				<h3>Shiksha 'O' Anusandhan University </h3>
+			</div>
+			<div class="row">
+				<img src="https://media.licdn.com/dms/image/D5622AQEKQ6S9UAC4CA/feedshare-shrink_800/0/1711219772445?e=1723680000&v=beta&t=yLURJvuMiNBwyB524F9-5qqIp88rQD6KoxPtMRhFnNw">
+				<div class="main-row">
+					<div class="row-text">
+						<h6>I received a certificate from Bhrat Intern for completing two=month Internship in JAVA Programming</h6>
+					</div>
+				</div>Bharat Intern</h3>
+			</div>
+			
+			<div class="row">
+				<img src="https://media.licdn.com/dms/image/D5622AQFbj8EdK9w6HA/feedshare-shrink_800/0/1719136341410?e=1723680000&v=beta&t=M8nCKJDy-8j8OjhKpI2P-T5pG58aQzzZXuzIjzkvc4o">
+				<div class="main-row">
+					<div class="row-text">
+						<h6>I Completed a 3 Month Internship in Web Devlopment with Devtern</h6>
+					</div>
+				</div>
+				<h3>Devtern</h3>
+			</div><div class="row">
+				<img src="https://media.licdn.com/dms/image/D5622AQH13UJe5gLh5w/feedshare-shrink_800/0/1719126085613?e=1723680000&v=beta&t=Uo_1GbBJiJOFKKmmUVzMs5xpee2cLoJlX60SCr6Zkkg">
+				<div class="main-row">
+					<div class="row-text">
+						<h6>I also Certified from the Coincent for Excellence Participation in Research from Robotics Club IIT Guwahti</h6>
+					</div>
+				</div>
+				<h3>Coincent </h3>
+			</div>
+			<div class="row">
+				<img src="https://media.licdn.com/dms/image/D5622AQEs20CRFer1Qw/feedshare-shrink_800/0/1718729121331?e=1723680000&v=beta&t=dUkSSPtx9rAaiuFAXwvgs0BgLVqJVgx3ZBPpJyG17ng">
+				<div class="main-row">
+					<div class="row-text">
+						<h6>I got Completion Certificate of Research from NxtWave Team</h6>
+					</div>
+				</div>
+				<h3>Nxt Wave Research Completion </h3>
+			</div>
+			<div class="row">
+				<img src="https://scontent.fccu4-2.fna.fbcdn.net/v/t39.30808-6/450479227_1039383891230372_4383072798456491210_n.jpg?stp=dst-jpg_s720x720&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=GXSoKRYx4pcQ7kNvgG8zlLo&_nc_ht=scontent.fccu4-2.fna&oh=00_AYAb54V2jxGE71aPx7S64D0rDYKiENLW2SB10yV9mSZ88Q&oe=669426E9">
+				<div class="main-row">
+					<div class="row-text">
+						<h6>Recently in 21th February , 2024 am getting a Letter of Recommendation from Dr.Deven Chopra(Software Engineering Manager) of PRODIGY INFOTECH</h6>
+					</div>
+				</div>
+				<h3>Details about the Recommendation </h3>
+			</div>
+			<div class="row">
+				<img src="https://media.licdn.com/dms/image/D5622AQFntrcULkQvDg/feedshare-shrink_800/0/1712997167693?e=1723680000&v=beta&t=EMToS6MO1sTSUb_cWdNnE6P2EE6TtpG5UH_o4pIKDzE">
+				<div class="main-row">
+					<div class="row-text">
+						<h6>I completed a one-month remote internship in JAVA Programming with InternPe and also received a letter of recommendation</h6>
+					</div>
+				</div>
+				<h3>InternPe </h3>
+			</div>
+			
+			
+		</div>
+	</section>
+	
+
+	<!-- -portfolio- -->
+	<section class="portfolio" id="portfolio">
+		<div class="main-text">
+			<h2>My Projects</h2>
+			<h4>Some Of My Distinguished Works</h4>
+		</div>
+
+		<div class="portfolio-content">
+			<div class="row">
+				<a href="https://ctms-ollc.odisha.gov.in/" target="_blank">
+					<img src="https://scontent.fccu4-3.fna.fbcdn.net/v/t39.30808-6/450258148_1039380544564040_96710598588394919_n.jpg?stp=dst-jpg_p180x540&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=nIwo45YRovMQ7kNvgEqoc6P&_nc_ht=scontent.fccu4-3.fna&oh=00_AYAgjMnfX_G1z3zbPlDFg0_F33z2y4F68fztxiJebhbMyA&oe=66943A61">
+				</a>
+					<div class="main-row">
+					<div class="row-text">
+						<h6>Web App development</h6>
+					</div>
+				</div>
+				<h3>Culture Troupe Management System</h3>
+			</div>
+
+			<div class="row">
+				<a href="https://www.geeksforgeeks.org/forecast-weather-project-check-today-weather-for-any-location/" target="_blank">
+					<img src="https://img.freepik.com/premium-vector/set-colorful-weather-widget-icons_38021-3.jpg">
+				</a>
+				<div class="main-row">
+					<div class="row-text">
+						<h6></h6>
+					</div>
+				</div>
+				<h3>Weather Forecasting App</h3>
+			</div>
+			
+			<div class="row">
+				<a href="https://www.geeksforgeeks.org/dog-breed-classification-using-transfer-learning/" target="_blank">
+					<img src="https://cdn.sanity.io/images/qyzm5ged/production/ecd7f1b7c5b7cb57e9d4225ab62fe09a37034535-2138x1196.jpg/Thumbnail-v1-(1).jpg">
+				</a>
+				<div class="main-row">
+					<div class="row-text">
+						<h6></h6><br><br>
+					</div>
+				</div>
+				<h3>Dynamic Calculator</h3>
+			</div>
+
+			<div class="row">
+				<a href="https://www.geeksforgeeks.org/ml-boston-housing-kaggle-challenge-with-linear-regression/" target="_blank">
+					<img src="https://www.picmicrolab.com/wp-content/uploads/2014/10/Digital-Stopwatch-Featured-Image.jpg">
+				</a>
+				<div class="main-row">
+					<div class="row-text">
+						<h6></h6>
+					</div>
+				</div>
+				<h3>Digital Stop Watch</h3>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- -POR- -->
+	<section class="POR" id="POR">
+		<div class="main-text">
+			<h2>Position of Responsibilities</h2>
+			<h4>Some of My valunteer Work</h4>
+		</div>
+
+		<div class="portfolio-content">
+			<div class="row">
+				<img src="https://scontent.fccu4-2.fna.fbcdn.net/v/t39.30808-6/450480328_1039390384563056_2864653229546012792_n.jpg?stp=dst-jpg_p180x540&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=cVOr3xZCqIgQ7kNvgGmtEYa&_nc_ht=scontent.fccu4-2.fna&oh=00_AYBO4_dZ6BP-SxiyxxPDhDfxjM-YI9EtnML1zSaZa7wAgg&oe=669422A8">
+					<div class="main-row">
+					<div class="row-text">
+						
+					</div><br>
+				</div><br>
+				<h3>Class Representative ( CR ) of ( Section - 21 )</h3>
+			</div>
+
+			<div class="row">
+				<img src="https://scontent.fccu4-2.fna.fbcdn.net/v/t39.30808-6/450102522_1039390834563011_8192272659775135691_n.jpg?stp=dst-jpg_s960x960&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=cWA-KbRjJRwQ7kNvgGEO-nR&_nc_ht=scontent.fccu4-2.fna&oh=00_AYD6IcCh6UG_r2SZ1b_IeyrZMzRtOPx8TsQ8Jk-7Lfgtfw&oe=66943D80" height="600">
+				<div class="main-row">
+					<div class="row-text">
+					</div>
+				</div>
+				<h3>Vice-President of Sri Guru Cultural Group Trust</h3>
+			</div>
+		</div>
+	</section>
+
+	<!-- -contact- -->
+	<section class="contact" id="contact">
+		<div class="contact-text">
+			<h2>Contact Me</h2>
+			<h4>Let's Work Together</h4>
+			<p>I will Help you in your next Project, Contact me through details given below .</p>
+			<div class="contact-list">
+				<li><a href="https://www.google.com/maps/place/Ouat+Colony,+Soubhagya+Nagar,+Bhubaneswar,+Odisha+751008/@20.2739871,85.8060796,17z/data=!4m6!3m5!1s0x3a19a778b967b913:0x381eeaacc109a8a7!8m2!3d20.2734185!4d85.8088349!16s%2Fg%2F11g81fj4ln?entry=ttu">Local Address</a></li>
+				<li><a href="#">nishant.sankar2003@gmail.com</a></li>
+				<li><a href="#">+91 7978304877</a></li>
+				<a href="nishant.sankar2003@gmail.com">
+					<button class="btn">
+						Let's Chat
+					</button>
+				</a>
+			</div>
+			<div class="contact-icons">
+				<a href="https://www.linkedin.com/in/nishant-sankar-swain-1abb71246" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+				<a href="https://www.instagram.com/nishant_sankar?igsh=MTE2OWl2Z3dibTlyZA==" target="_blank"><i class='bx bxl-instagram' ></i></a>
+				<a href="https://github.com/Nishant18S" target="_blank"><i class='bx bxl-github' ></i></a>
+				<a href="https://www.facebook.com/nishant.sankar.3?mibextid=ZbWKwL" target="_blank"><i class='bx bxl-facebook' ></i></a>
+				<a title="+91 7978304877"><i class='bx bxl-whatsapp' ></i></a>
+				<a href="https://youtube.com/@nishantsankarswain5074?si=K2HEg0_s5otERqpK" target="_blank"><i class='bx bxl-youtube' ></i></a>
+
+			</div>
+		</div> 
+	</section>
+	<!---scroll-top--->
+	<a href="#" class="top"><i class='bx bx-up-arrow-alt' ></i></a>
+
+	<script src="https://unpkg.com/scrollreveal"></script>
+
+	<!---custom js link--->
+	<script>
+const header = document.querySelector("header");
+
+window.addEventListener ("scroll", function() {
+	header.classList.toggle ("sticky", window.scrollY >0);
+});
+
+let menu = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+menu.onclick = () => {
+	menu.classList.toggle('bx-x');
+	navbar.classList.toggle('active');
+};
+
+window.onscroll = () => {
+	menu.classList.remove('bx-x');
+	navbar.classList.remove('active');
+};
+
+const sr = ScrollReveal ({
+	distance: '25px',
+	duration: 250,
+	reset: true
+})
+
+sr.reveal('.home-text',{delay:190, origin:'bottom'})
+
+sr.reveal('.about,.services,.portfolio,.contact',{delay:200, origin:'bottom'})
+</script>
+
+</body>
+</html>
